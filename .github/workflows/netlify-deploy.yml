@@ -12,5 +12,6 @@ jobs:
           HOOK: ${{ secrets.NETLIFY_BUILD_HOOK }}
         run: |
           if [ -z "$HOOK" ]; then echo "Chybí secret NETLIFY_BUILD_HOOK"; exit 1; fi
+          sleep 20
           curl -fsS -X POST -d '{}' "$HOOK"
           echo "Netlify build spuštěn"
