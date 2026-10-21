@@ -5,7 +5,7 @@
 const WM = f => 'https://commons.wikimedia.org/wiki/Special:FilePath/' + f + '?width=900';
 const WP = f => 'https://commons.wikimedia.org/wiki/File:' + f;
 
-window.APP_VERSION = '2026-10-21.1';
+window.APP_VERSION = '2026-10-21.2';
 
 window.KITCHEN = {
   intro: 'Plně vybavená kuchyně. Recepty píšu přímo na tohle vybavení — když něco přibude nebo se něco chová jinak, napiš mi to a doplním.',
