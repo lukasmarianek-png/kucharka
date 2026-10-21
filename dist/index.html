@@ -1,0 +1,1490 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kuchařka</title>
+<meta name="description" content="Naše bezlepková kuchařka — recepty krok za krokem, časovače, poznámky.">
+<meta name="theme-color" content="#F6F0E6" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1B1714" media="(prefers-color-scheme: dark)">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Kuchařka">
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAYAAAA9zQYyAAAYiElEQVR42u2df3CV15nfv885533vLyEhGySEf8WJgx0ZMMSxN7Z3fUUMpTYkttNeutuN42aazjTNTv/YZOJOM1uhpt1O9le723HbaXfT2pvMJtys7TjGDcEEyYlj18T8tsB2wHECBkkGgX7de9/3nPP0jythwPywZCHeq/t8ZxhmhHhA7/nc53zPc877HMIlFgPUnc/rjp4eRwBPfH3TqqW5pgazRBFfZ+GWxw4fN4qaHXObJnWVZWYCCKLEiQE2ROTYH9ZER6znwUBju4He4ZneOjli96zevHv0YgxcCl0yYDo7oTq682pFT4+d+NqLDyz/mNJ8u2es8Z5v9cD1oVZkFMF5BgNwnhEzC8nJhxoBEbQiEACtCNYzIudZAW8qRa8owkbv6OU7ntqxb+Lvbc3nTXdHj+/qgq8JoDs7oW7uLdC6YtEBwIu/u7hV2+A+6/3vMdM9WaMUAFScR+QZzPAEZgYRAWACSWaunUxNDGYAp8aQoEJFSGkFABiz3hPxFqPU3zkTP3vHd/f2AcCGQkG/2l7k6QZ7OsGhrfm8nsjILzy4dLEi/bBj/1BDYFqt9xizHszsAFR/dEAJFrNSnpl5fJx11igYpTAS2z5N6m89u8fuenL33omMvaKnx2GarMi0AL2hUNATGXnLZ5bcmDP6Ecf4/Vygw9HYwXrvqPrTKUj2rb9EzuwZgFFK5wKN0dhFmvCdUeu+ec/Te147m6HLCvT4J8xuKLSHV7nga4rpq5lANw1FFgBbBmmxEKJTFgXsADKNoUEpdic98Z8d1vGfrCv2RhMsfZB/Q0/ZKwOquxN0/WNvuZ77l65uZvNE1uh/UvGcLjlnx62wwCw6PXsSQAoAl51zIMrmjP5U1qrPfv7GlgMdm15+gzuh0APqmaIFmRJsGwrQ64pwAPCzzy7rDIjWE4Cyc5KRRZPO2GmtDQOImdf/9hM7u85m7JICPeF1/u+DN7U1If2/s4FePRRZP77GlUWeaPJgM3siQmNo1FjsNp1E+Qv3Prn/yFR89aSAnvA4m9cuu21OCj8IlGobia0lkJFhEU3D6tE2BMbE3h8ZruD+Vc/s3DZZX01TgjmkTURoLle9ssAsmlao01obZgwOR7x6slDTVGAG0FxxzhGRliEQXQIL4lJaa2DyUF/U824oFPTZMJed8wKz6JJVQ4h02TkPoHlOSJs2r112W7U0XNAfCGju7FTrikX33Jpbbp8T4hTMShZ/okssRaTehRqbnltzy+3rikXHnZ1qSpajE1DrAX7p04tbODC7NVFL2YrNEM28/UgbrR1zP8V26Sd/uLd/PUBdOPcZkPPSvr5QIAVwpPW3U1q1lJ2zArPoMtkPm9KqJdL62wrg9YUCTcpybM3nDRWL7if337J+bmhWSmlOdFmhBpmR2Nq5oVn5k/tvWU/Fotuaz5v3ZTkmitk//cyylamAflyx3jNBMrPo8oPNcCmjVCXmf/A7T+987lwbL2dkaAYIKGJvoT30xI8yQB4s29iiRMiDiQHyxI/uLbSHQHGc2fNZjkJBrSvCvROFX21KmUWVqm+WioYoKX5aVZyzTSmz6J0o/Oq6IhwKhTP4PGUlOjs7Vcej/407ti+/IWXweOQ48ICSg0aiRFU9QOQ8s1G4/XM3tH3/Q09sOQ50qp6eHj4jQ9/c20tEYKX8H+WMbnTsvcAsSt4CEeTY+5zRjUr5PyIC39zbS2csChmdCujilx5YfhMU77Ceg3FvIkCLEpmoCWCjKIan5Z98asd+oJMIXV4BQHe+WxHAZfZfzBqdYrAXmEXJLniwzxqdKrP/IgHcne9W439QBffnDy6d75n2KKL5ttpGQIAWJdhLgw0RPPOAIl5y55O7BwBAdefzmgC2rO5tDE2L9eKdRbXhpa33vjE0LZbVvdUsnddqoKWHOwEF9g/HnqXoLKolqBF7ZrB/uBNQAy09VX671yz7aBjyPsuQNgOimnMfhuCjiD7WsXHnG1UjbfiurNGamb08H1FN0czss0ZrMnwXMF6HJvJrWVKzqEZtB48zDAC0odDe0BqZvSmjrqu4Ou34SecouU9lskpanDqpdqQ0UcX6t/pCu9i0xkG7IVwdufptX8tRBez9OEgAmKGCEFCqpuPUS7UjcsyG6OrWOGg3iukGY0g75+tvM4UIHFdw/ee/PDTnxiUxl8eqX05lcOBb/6Vp9MB+Q6k0qv01ayhOPS4MtdLe8g2GFC8xSqFimU9lhDr6fLP3aLxpadS09HcqQHn8AaRZN3xrDntfbfJ7UYCSFqf+VoZGEWLllxjHfKvzDNQfzafkS2MElAkjQwQFIM2AdzUfp56mWucZjvlWA6C57j/varxVtdZV06WmWI5PWpz6WhwCQLMC0OaYwSRPTFSjMBPIVW1YmzKkroq9HEY650Q2TZkxaXFmY6Uj9gxD6io1ftuU6OxH5D3cyDDgHUjpKS4xkhZnVo8YLDPLK1bnejRxmRZ96ZGTbWvXjZEJ2I4MgW1czZDv+xXLpMWpj0ytv3DTgvV1vDgG2witn1pTyiy8ziGuEJQCvEcwv9XNu2t1ecHdK0s6m+PS0UMmHjyu2DuQCc9MA0mLU8eqb6AVgaMIUAHNu/PeErhC3rtqrdda8nGFTONcP3f53ZW2lfeVMm1X28rAEV051q/BHqRNMuMI0PW6PGZQEGLk4L6AKyOqefHyiDLNHsTwzpIiAN6Tj0ukgxQabro1WrhqTanp5uXR8Bu9YTx4TJEJAPbJigMWoOvae2mNE7t/ER7d8kzWDh1X2bZrnGlu9TAGsBERCCCGj0tEzMhce3OcbVvg+rY+myVjEhtHgK5nqMMQbmxEDe58OXXkJxtzY79+w2RaFriw5SqHIA24uNpzhwiIRylz9Ufs8e0vpCtHD2sKw1Pb0UmLU28S0zUh70EmgAlS4LhCR597Otv/083ZpvZbKtf+o4dGmpfcFp2+eINSUKkMvwecpMWpt2WRkHymp2bvANIwuUaQUjixc1tq19f/1ZUne3cGSGUZ3p/x/TURR4Cue7KrIAFQuQZQEMBH0RRK9kmLI0CLJo5sajW74oiHrsOFotJgAG5s9ANlxKTFEaDrimICKQV2DnZkCGQMrrj97kru2o9Y2HL1CnPwab9qJI4AXZ8g+ziCGxmDbmhE64r7SgvuWTPWfFu+AhcDcVQFyHsACqTMeyFKWhwBuh5XEgocx3ClUaRar/It9xXGFtyzppS7YXkEWEJ5uDq9E8G7GCpIIz7ep0uHDmoKUu9WF5IWR4CuT5h9uYR0S5tbeO+XRltX3FsK519vgRL50nGlJsDxHkprqOwVHjD4zd//1Zxy39vaNDRVKxBJi1OvE+3zD9xSvx9nInAcIdXS5pZ9478fSy38aIz4pPJxDDXeMsB7X20hEDR6lI+roz2bMn1bN2ZO9u5MVc9fcPLiiOWo2zIGfBzhun/8z4ZTCz8au6EjWocpVlpXfWkmywoZjgbeNH0/eTzX1/2j7MjB/Ya0gUpn3oUnaXEE6DoVM0hrZBYstECFdBBWWzkwA5kGHv3l3uDolo2Z/p9uzlb6DiuVSsM0NIHBOHuHLlFxBOj6lo/id2u67IF0jt987C8bf/P9xxt8VIZKZ2CamsHeX9CfJi2OAF23C8OzNygIg7teTnEcVcGxFuxc7cWpx6GUR3CeB5PKMai6ofFBvGnS4gjQ9WuwMT2bFEmLI0DXJ842rr6g+gE7fiYtjgBdN9n4TM8aXjHP+bFR+LHRU9vQtRen/iRtDFyM1hXjbQNsNN42wFLLb+XL6YXXuOjkoIoGjmpfKYGCsNrkJelxBOg6BjquYP6d95Sz1y6yvjJKpMcBUQpzbro1avuHD5QaP3JTZEtjqtx/1LjRIZBSZ2bIpMURoOvVcBHYWlQGj+sFq9aOUZgFbIV89eJR+LhM5CxlPrTItqz4dGn+J36r7K2leOiE8uWSOtWOK2lxBOh6tc7Vvhzlt9/SQ/t2h5nWNpdacLWjsIHhImIefzskjsjbCoVXtrh5d60dU+TpnZe2plVqfLs5aXEE6PpeEFKQQunQr8zRzU9nT/buCE0YcHbhNY4y8zw4Ju8cVPXcMSEeU/sf/U9z7ciQqnYq4oTGEaDrHOoQpA1Kh94yA8//KDPw0vMZ4ojS89ucaVroQBYIG3Dkx0/kjvzo77M623COm6mSFqcOl0V1fXz0nL5aVf1qpQwfRwjntfqFqz4z2vqptaXM1dfZbV9a11I6/CtDYfrCACUtjgBd70+GQOPHOX15DGbuFdxw/Y3x8Gu7w0m1sE1aHAFawCZSYGfho8rUzx0nLc5snWDlEVy8ElLtXqSgMtmpw5O0OLNUcnx0EgtHeJ6FcQToDz6LKyV3hNRDCvB+xmeQmQV6HGI7MgzvLKTzz+ydzUgp6EwOypgq2LMOaKpu64I9Wu5ejdyHFwFu/LoF0SxacjCgNCrH+jHwsx/DDg9BZ7IzBrWZMZidg05n0P61P0bzJzokO896Ea554CH0fvNrGDn4OnQmMyNQzwjQpBTsyDBu+MK/RvMnVsKP9oOkdjq75T0y19yAG//g69j+yBdnUYYmAscxwuYrMf/Oe8DxEJQ2siic7dIaXBpEw41L0HTjYgzueQUmm7vkYM9ImmRmqDAEGSMc15ntABFUKj1j1Y6Zm/fHj0eK6q/iMZPjPrNAT3QBEtUPzKBZBjQzVBCgcuwdDO3fAwRz4G083vXnwr8E/iQyyu9r7NjGoFQGUf/bGD6wHyqVrpb0ZkOVA8wgo3Hgsf+KhkU3I5x3DYAIFy7dEeAjIL7Y94lmNOOGIUiFuPCLBAzAgG2EA3/zn1EZPIagYc6MVDpm7LQdKQVXLiE1rxXXPPA55K6/AXDunNUOIoK3MTILrkF6wdWAi6UqkoDMDB2gfPQQSkd/A2WCc2dcZoA0KoPv4O2N38PJfbtnpLox40BPQO2jCK5cAgXn72VMxiAaPI5F/+IruO7hPwSPHcept59Fl4dn50DZK/DWY3+B1//XnyNsvqK683vOAazuCpMxMDO4SzhzlmPioXgPCgIEqQtfm0Baw1cqVeil/VWiLAcFAUw2VwX1fA0jGZi4zIhnuM3vzJ+2Y75450wiWRTWyKLwgjb6Mkj2n0WzSgK0SIAW1bESXm0SoEWTs9Dnq2wI0KLay8we6QULE11CFaBFk5BHunVh9Z3QhFagBGiRWA6RLAoFaJFIgBaJBGiRAC0SCdAikQAtEgnQIpEALRKgRSIBWiQSoEUiAVokEqBFArRIJECLRAK0SCRAi0QCtEiAFokEaJFIgBaJ6gFoucswiYOiBOhJixmkNUZ+fQCAk+79CRkTQGPs1wfhrU3smCT246a0RnngCNhGAnSCVO47jCQ3oVfJTAYMFYQYO/QrxANHLnh9hWimSFGAK2Po9VehTCitwCZtOYIA0eAxnNi7HdCZGb/aQHTWeIQplA69ieGD+6HT6cSOh0r0Q1Qafc9vArzcgnVZh8J7QKUw8LMtiIeHpPvoVB+izmQxuHsbxn71GiglWfqySWv48jD6nt8EnUonehySXbZTCr5SwcHHHwWU+OjLklhsDErNxeEffAcjB1+HTmcSPQ6JBpq9h8k14J2XetC36fug7JVgZ4WymXr+zoFyTRg9uAtvFf8PTC6X+Fky8TsXzAyVSuON//mnGN6/DZRtFKhnKJlQkII9OYj9f/7vYEeHQdokfpZM/lYcM5QxcJUy9v6HP0Sl77BAPROZ2QRgpbDvT/8Nhl5/FWaG7uqe/UBPLBBTacQnT2D7Vz6P4f27QNl5YOdkoTjNyYOdBWXnwI6NYtcj/xzHXnkRQdPcxHfurymgJ6BWYYjoxHHs+vq/xNEffReUbQKlMwD76u20smicGsTegb0DTADKXomhvdux/SsP48Te7TDZhovf/JukQsJMXl4/bZUPa+ErZcz7ZB7XP/Rl5D68CKAQcGUgjsDMAvdFH+T44S9jAJMGAFT638ahJx7H4WeLYGehL3SftwA9nf9rAhHBjo5Ap9KYu+QTmJ9fjbk3fxzplgWASQHQAu2FaIYDOIYdPIaTr72KgZ9vwbGXn0d04hhMtgGkVE3audoE+rRszd7DlcbA3iGceyWyV38IqZY25K79MMAeBNlhPNNhMEgblPvfRunt36B05NcoDxwFOwedyUGZoGo/apWJWgb6dLABgrcxfFypLhadLBYvgDVIaZBWUEEIFYQACMy+5q2amRXDMz41ktYwJjduEAXbizANgMHMs6pSZGbXIFUHSFS/knecRAK0SCRAi0QCtEg0SaA5yW88ikSTqQkArAwRCdGiWQAzDBEpy/5woAiSqUW1nJkDRbDsDysARzQRiAVoUW2KGKyrL1EfUQAGZVNNVPNQV38bVJroFa0Ict5SVMOmg7UiaKJXFHvaYz0DJI0vRLWanomsZ7CnPcYT/9I6dpCatKiGkbbOO0/4peoL4l7LfCjURFLpENWc2QA41ESW+VBfEPeqdcXeESL+RUopELMcIhbVVmpm9imlQMS/WFfsHVFVS62eIUh6FtVkhgaNMwyMn4dmSy+MKedIWuaLam89qMasc2zpBQBQGwrQWzfuPBB7fj5rNMDs5DGJaiM9s8sajdjz81s37jywoQCt5vfnqQvwIPVYoORch6i27EagiEDqsS7Az+/PE/H4JsvPH1w63zPtUUTzLbO8lSdKOsxsiOCZBxTxkjuf3D0AAIoA7s7n9V1P7u63jG83BJoIYjtECffOYNcQaLKMb9/15O7+7nxeE8AKADp6OjwDlCb112PWVah6d5e4D1FiEzSB1Jh1lTSpv2aAOno6PDC+O0jo8sVCQd3x1I59kePvNYZGQbK0KLk8u8bQqMjx9+54ase+YqGgCF3vAg0Ar7a3MzPIe/WNUeuGNCl5m0WUSO+sSalR64a8V99gBr3a3s7vWpHTv7lQ0FQsuu77l/3buSn9H4ei2AJk5DGKEoS0bQwDc6Livt7xg51/PMHsuYEGqFiAake7PhYFe9JGLSpb52XDRZQIlJl92mhVtv71K8N4SS96XaEIT6c5CXXmyhEMFLC42Bsppi9XV41SmhYlQwrEBLBi+vLiYm8EFEBn2eL39Jwt9vby1nze5H/8/375Txe10tyUWVF2zhIkS4sup3dm25QKzFDs/n3+6V3f2prPm7XPPvuewsV5N0+4UNCqWHTdD9yyuSHQK0dia0n8tOgywdwQGDMSu+c6ntq1yp/lm8/M4ufR+mKRPUChc5+rON+f1tqwnPMQzbxvdmmtTcX5/tC5z3mA1heLfH5bch51AR6dnXTHD/f2jVX408w8mNJaezkzLZoheWaf0loz8+BYhT99xw/39qGzs3r2aLJAAwB1dfkNhYJeuXHXy8MRVgMYTGutBGrRTMCc1loBGByOsHrlxl0vbygUNHV1XZC993UAaWs+b1b09NjNa5fdNiekTQCaK845IpKLTESXxGaktNZVmHn1qmd2bptg8OKVkPehFT09dms+b1Y9s3PbcMTVTG20ZrDcfima9gVg2kwN5vcN9LmgZvCRhsAYgVo03dUMBh+ZCsyTAnoC6g2Fgl71zM5tg758a8X6TU1hYKqWR3y1aMoWwwPwTWFgKtZvGvTlW1c9s3PbhkJBTwbm9+2hz9aGAvS6IhwA/OyzyzoDovUEoOycZZCWlwNE7y8jgwnVshwDiJnX//YTO7vOZmwymtKirtgL7gRUdyfouv9xtPuhRS0vEWh5LtALLIM82BKIIGCLzpeUwU6T0g2BVpHjVyPnP3/3U7v+hjuh0AP6g15Macb/wMBNeJwNhfbwKhd8TTF9NRPopqHIAmDJ2KL3ZGSATGNoUIrdSU/8Z4d1/Cfrir3RZP3yJQG6Oj0U9Lrxrcgtn1lyY87oRxzj93OBDkdjB+u9I2D8cmmBu/7WeuwZgFFK5wKN0dhFmvCdUeu+ec/Te147m6HLDvRErK35/CkT/8KDSxcr0g879g81BKbVeo8x6zGxfU7V5pBy4Gl2yvP4hZFEpLNGwSiFkdj2aVJ/69k9dteTu/eeNsM7TNPLJNOeLTs7oW7uLdDEp+3F313cqm1wn/X+95jpnqxRCgAqziPyDGZ4qt5ATYTqy2JiUWrIQnC1D/OpMSSoUBFSupqrxqz3RLzFKPV3zsTP3vHdvX0TGfnV9iJ3dWFaq2OXDJzOTqiO7rw63RO9+MDyjynNt3vGGu/5Vg9cH2pFRhGcr14h4DwjrrZRECUbZgRE0IpAALQiWM+InGcFvKkUvaIIG72jl+94ase+09dc3R09frpBvuRAn/aDU3c+rzt6etzph7E3rVqaa2owSxTxdRZueezwcaOo2TG3aVJXWWaWTJ3czGyIyLE/rImOWM+DgcZ2A73DM711csTuWb159+jFGLgU+v/hDBa+0/CgCwAAAABJRU5ErkJggg==">
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F6F0E6; --bg-2:#EFE6D8; --card:#FFFCF7; --ink:#2A221C; --ink-2:#6B5E52; --ink-3:#9A8C7E;
+  --line:#E4D8C7; --accent:#C2502F; --accent-2:#E4774F; --accent-soft:#F6DDD0; --accent-ink:#8E3418;
+  --olive:#5E7136; --olive-soft:#E3E8D2; --gold:#C9952B; --gold-soft:#F5E7C6;
+  --shadow:0 1px 2px rgba(60,40,20,.06),0 8px 24px rgba(60,40,20,.08);
+  --r:18px; --r-sm:12px; --tab-h:64px;
+  --serif:'Fraunces',Georgia,serif; --sans:'Manrope',system-ui,-apple-system,sans-serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#1B1714; --bg-2:#241F1B; --card:#2A241F; --ink:#F3EADF; --ink-2:#C2B4A5; --ink-3:#8C7E70;
+    --line:#3A322B; --accent:#E8714A; --accent-2:#F08B66; --accent-soft:#4A2A1E; --accent-ink:#FFC2A8;
+    --olive:#A5BC74; --olive-soft:#2F3423; --gold:#E3B655; --gold-soft:#3E331C;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.35); color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#1B1714; --bg-2:#241F1B; --card:#2A241F; --ink:#F3EADF; --ink-2:#C2B4A5; --ink-3:#8C7E70;
+  --line:#3A322B; --accent:#E8714A; --accent-2:#F08B66; --accent-soft:#4A2A1E; --accent-ink:#FFC2A8;
+  --olive:#A5BC74; --olive-soft:#2F3423; --gold:#E3B655; --gold-soft:#3E331C;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.35); color-scheme:dark;
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.5}
+body{padding-bottom:calc(var(--tab-h) + env(safe-area-inset-bottom) + 16px);overflow-x:hidden}
+svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:none}
+button{font:inherit;color:inherit;border:0;background:none;cursor:pointer;padding:0}
+a{color:inherit;text-decoration:none}
+input,textarea,select{font:inherit;color:var(--ink)}
+h1,h2,h3{font-family:var(--serif);font-weight:600;letter-spacing:-.01em;margin:0}
+.wrap{max-width:760px;margin:0 auto;padding:0 16px}
+.muted{color:var(--ink-2)} .small{font-size:13px}
+
+/* ---------- header / home ---------- */
+.top{padding:calc(env(safe-area-inset-top) + 18px) 0 6px}
+.top-row{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{display:flex;align-items:baseline;gap:10px}
+.brand h1{font-size:34px;line-height:1.05}
+.brand .dot{width:10px;height:10px;border-radius:50%;background:var(--accent);display:inline-block;transform:translateY(-4px)}
+.tagline{margin:6px 0 0;color:var(--ink-2);font-size:14px}
+.me-chip{display:flex;align-items:center;gap:8px;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:6px 12px 6px 6px;font-size:14px;font-weight:600;box-shadow:var(--shadow)}
+.avatar{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:var(--accent-soft);color:var(--accent-ink);font-weight:700;font-size:13px;flex:none}
+.search{margin:18px 0 12px;display:flex;align-items:center;gap:10px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:0 14px;height:48px;box-shadow:var(--shadow)}
+.search svg{color:var(--ink-3)}
+.search input{flex:1;border:0;background:none;outline:none;font-size:16px;height:100%}
+.chips{display:flex;gap:8px;overflow-x:auto;padding:2px 16px 10px;margin:0 -16px;scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chip{white-space:nowrap;padding:8px 14px;border-radius:999px;background:var(--card);border:1px solid var(--line);font-size:14px;font-weight:600;color:var(--ink-2)}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.section-h{display:flex;align-items:baseline;justify-content:space-between;margin:20px 0 12px}
+.section-h h2{font-size:22px}
+.section-h .muted{font-size:13px}
+
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media (min-width:620px){.grid{grid-template-columns:repeat(3,1fr)}}
+.card{background:var(--card);border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column;position:relative;transition:transform .15s}
+.card:active{transform:scale(.98)}
+.card .ph{aspect-ratio:4/3.2}
+.card .body{padding:10px 12px 12px;display:flex;flex-direction:column;gap:4px;flex:1}
+.card h3{font-size:16px;line-height:1.2}
+.card .meta{font-size:12.5px;color:var(--ink-2);display:flex;gap:8px;align-items:center;margin-top:auto;padding-top:4px}
+.card .meta svg{width:14px;height:14px}
+.badge-corner{position:absolute;top:10px;left:10px;display:flex;gap:6px;flex-wrap:wrap}
+.pill{font-size:11.5px;font-weight:700;padding:4px 9px;border-radius:999px;background:rgba(255,252,247,.92);color:var(--ink);backdrop-filter:blur(6px)}
+.pill.hot{background:var(--accent);color:#fff}
+.pill.new{background:var(--olive);color:#fff}
+.pill.gf{background:var(--gold-soft);color:var(--ink)}
+
+.feature{display:block;position:relative;border-radius:22px;overflow:hidden;box-shadow:var(--shadow);margin-top:4px}
+.feature .ph{aspect-ratio:16/10}
+.feature .ov{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 35%,rgba(20,12,6,.78));display:flex;flex-direction:column;justify-content:flex-end;padding:18px;color:#fff}
+.feature .ov small{font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:11.5px;opacity:.9}
+.feature .ov h2{font-size:26px;line-height:1.1;margin-top:4px}
+.feature .ov p{margin:6px 0 0;font-size:14px;opacity:.9}
+
+/* photo + fallback */
+.ph{position:relative;background:var(--bg-2);overflow:hidden}
+.ph img{width:100%;height:100%;object-fit:cover;display:block}
+.ph .fallback{position:absolute;inset:0;display:grid;place-items:center;font-family:var(--serif);font-size:44px;color:rgba(255,255,255,.85)}
+.ph.fail img{display:none}
+
+/* ---------- detail ---------- */
+.hero{position:relative;margin:0 -16px}
+.hero .ph{aspect-ratio:4/3;max-height:58vh;width:100%}
+@media (min-width:760px){.hero{margin:12px 0 0;border-radius:24px;overflow:hidden}}
+.hero .shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.35) 0,rgba(0,0,0,0) 28%,rgba(0,0,0,0) 55%,rgba(20,12,6,.55));pointer-events:none}
+.hero-bar{position:absolute;top:calc(env(safe-area-inset-top) + 12px);left:12px;right:12px;display:flex;justify-content:space-between;gap:8px}
+.round{width:42px;height:42px;border-radius:50%;background:rgba(255,252,247,.92);color:#2A221C;display:grid;place-items:center;box-shadow:0 2px 10px rgba(0,0,0,.15);backdrop-filter:blur(8px)}
+.credit{position:absolute;right:10px;bottom:8px;font-size:10.5px;color:rgba(255,255,255,.85);text-shadow:0 1px 2px rgba(0,0,0,.6)}
+.credit a{text-decoration:underline}
+.d-head{padding:18px 0 4px}
+.d-head .cat{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+.d-head h1{font-size:30px;line-height:1.1;margin-top:6px}
+.d-head p{margin:8px 0 0;color:var(--ink-2)}
+.facts{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0 4px}
+.fact{display:flex;align-items:center;gap:6px;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:6px 10px;font-size:13.5px;font-weight:600}
+.fact svg{width:16px;height:16px;color:var(--ink-2)}
+.wake{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;font-weight:700;color:var(--olive);background:var(--olive-soft);padding:5px 10px;border-radius:999px}
+.wake[data-on="false"]{color:var(--ink-2);background:var(--bg-2)}
+.wake i{width:7px;height:7px;border-radius:50%;background:currentColor;display:inline-block}
+.wake[data-on="true"] i{animation:pulse 1.6s infinite}
+@keyframes pulse{50%{opacity:.3}}
+
+.actions{display:grid;grid-template-columns:1fr auto auto;gap:8px;margin:16px 0 6px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;height:50px;padding:0 18px;border-radius:14px;font-weight:700;font-size:15.5px;background:var(--card);border:1px solid var(--line)}
+.btn.primary{background:var(--accent);color:#fff;border-color:transparent;box-shadow:0 6px 18px rgba(194,80,47,.28)}
+.btn.icon{width:50px;padding:0}
+.btn.sm{height:40px;font-size:14px;padding:0 14px;border-radius:12px}
+.btn:active{transform:scale(.98)}
+
+.keybox{display:flex;gap:12px;background:var(--gold-soft);border-radius:var(--r);padding:14px 16px;margin:14px 0}
+.keybox svg{color:var(--gold);width:24px;height:24px;margin-top:1px}
+.keybox b{display:block;font-size:12px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:2px}
+.keybox p{margin:0;font-size:15px}
+
+.panel{background:var(--card);border-radius:var(--r);padding:16px;box-shadow:var(--shadow);margin:14px 0}
+.panel-h{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:8px}
+.panel-h h2{font-size:21px}
+.stepper{display:flex;align-items:center;gap:4px;background:var(--bg-2);border-radius:12px;padding:4px}
+.stepper button{width:38px;height:38px;border-radius:10px;display:grid;place-items:center;background:var(--card)}
+.stepper button svg{width:18px;height:18px}
+.stepper .val{min-width:66px;text-align:center;font-weight:700;font-size:15px;line-height:1.1}
+.stepper .val small{display:block;font-weight:500;font-size:11px;color:var(--ink-2)}
+
+.ings{list-style:none;margin:0;padding:0}
+.ings li{display:flex;align-items:center;gap:12px;padding:11px 0;border-top:1px solid var(--line);cursor:pointer}
+.ings li:first-child{border-top:0}
+.ings .q{min-width:76px;font-weight:700;font-variant-numeric:tabular-nums}
+.ings .n{flex:1}
+.tick{width:22px;height:22px;border-radius:7px;border:1.8px solid var(--line);display:grid;place-items:center;flex:none;transition:.15s}
+.tick svg{width:15px;height:15px;opacity:0;stroke-width:2.6}
+li.got .tick,.step.done .num{background:var(--olive);border-color:var(--olive);color:#fff}
+li.got .tick svg{opacity:1}
+li.got .n,li.got .q{color:var(--ink-3);text-decoration:line-through}
+
+.steps{list-style:none;margin:0;padding:0}
+.step{display:flex;gap:14px;padding:14px 0;border-top:1px solid var(--line)}
+.step:first-child{border-top:0}
+.num{width:30px;height:30px;border-radius:50%;background:var(--bg-2);display:grid;place-items:center;font-weight:700;font-size:14px;flex:none;cursor:pointer;transition:.15s}
+.step.done .num{font-size:0}
+.step.done .num::after{content:'✓';font-size:15px}
+.step .tx{flex:1;min-width:0}
+.step .tt{font-weight:700}
+.step .tt .k{display:inline-block;margin-left:6px;font-size:11px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--accent-ink);background:var(--accent-soft);padding:2px 7px;border-radius:6px;vertical-align:2px}
+.step .tg{display:inline-block;margin-left:6px;font-size:11.5px;font-weight:700;color:var(--olive);background:var(--olive-soft);padding:2px 8px;border-radius:6px;vertical-align:1px}
+.step p{margin:3px 0 0;color:var(--ink-2)}
+.step.done .tt,.step.done p{color:var(--ink-3)}
+.tbtn{margin-top:10px;display:inline-flex;align-items:center;gap:8px;height:38px;padding:0 14px 0 10px;border-radius:999px;background:var(--bg-2);font-weight:700;font-variant-numeric:tabular-nums;font-size:14.5px}
+.tbtn svg{width:18px;height:18px}
+.tbtn[data-state="run"]{background:var(--accent);color:#fff}
+.tbtn[data-state="pause"]{background:var(--gold-soft);color:var(--ink)}
+.tbtn[data-state="done"]{background:var(--olive-soft);color:var(--olive)}
+
+.tips{margin:0;padding:0;list-style:none}
+.tips li{position:relative;padding:8px 0 8px 22px;color:var(--ink-2)}
+.tips li::before{content:'';position:absolute;left:4px;top:16px;width:7px;height:7px;border-radius:50%;background:var(--accent-2)}
+
+.rate{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.rate .person{background:var(--bg-2);border-radius:14px;padding:10px;text-align:center}
+.rate .person b{display:block;font-size:14px;margin-bottom:6px}
+.rate .person .row{display:flex;justify-content:center;gap:6px}
+.rate button{width:40px;height:36px;border-radius:10px;display:grid;place-items:center;background:var(--card);color:var(--ink-3)}
+.rate button.down svg{transform:rotate(180deg)}
+.rate button[aria-pressed="true"].up{background:var(--olive);color:#fff}
+.rate button[aria-pressed="true"].down{background:var(--accent);color:#fff}
+
+.note{display:flex;gap:10px;padding:12px 0;border-top:1px solid var(--line)}
+.note:first-of-type{border-top:0}
+.note .who{font-weight:700;font-size:14px}
+.note .when{color:var(--ink-3);font-size:12px;margin-left:6px}
+.note p{margin:2px 0 0}
+.note .kind{display:inline-block;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.05em;padding:2px 7px;border-radius:6px;margin-left:6px}
+.kind.problem{background:var(--accent-soft);color:var(--accent-ink)}
+.kind.uprava{background:var(--gold-soft);color:var(--ink)}
+.kind.poznamka{background:var(--olive-soft);color:var(--olive)}
+.kind.claude{background:var(--bg-2);color:var(--ink-2)}
+.compose{margin-top:12px;background:var(--bg-2);border-radius:14px;padding:12px}
+.seg{display:flex;gap:6px;margin-bottom:8px;flex-wrap:wrap}
+.seg button{padding:6px 12px;border-radius:999px;font-size:13px;font-weight:700;background:var(--card);color:var(--ink-2)}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.compose textarea{width:100%;min-height:76px;border-radius:12px;border:1px solid var(--line);background:var(--card);padding:10px 12px;resize:vertical;outline:none}
+.compose textarea:focus{border-color:var(--accent)}
+.compose .foot{display:flex;justify-content:space-between;align-items:center;margin-top:8px;gap:8px}
+
+.hist{list-style:none;margin:0;padding:0}
+.hist li{padding:8px 0;border-top:1px solid var(--line);font-size:14px;color:var(--ink-2)}
+.hist li:first-child{border-top:0}
+.hist b{color:var(--ink)}
+
+/* ---------- cooking mode ---------- */
+.cook{position:fixed;inset:0;z-index:50;background:var(--bg);display:flex;flex-direction:column}
+.cook-top{display:flex;align-items:center;gap:10px;padding:calc(env(safe-area-inset-top) + 10px) 16px 8px}
+.cook-top .ttl{flex:1;min-width:0}
+.cook-top .ttl b{display:block;font-family:var(--serif);font-size:17px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cook .round{background:var(--card);color:var(--ink)}
+.progress{display:flex;gap:4px;padding:0 16px}
+.progress i{flex:1;height:4px;border-radius:4px;background:var(--line)}
+.progress i.on{background:var(--accent)}
+.progress i.dn{background:var(--olive)}
+.cook-body{flex:1;overflow-y:auto;padding:24px 22px;display:flex;flex-direction:column;touch-action:pan-y}
+.cook-body .no{font-family:var(--serif);font-size:15px;color:var(--accent);font-weight:600}
+.cook-body h2{font-size:32px;line-height:1.1;margin:6px 0 14px}
+.cook-body .txt{font-size:22px;line-height:1.5}
+.cook-body .k{margin-top:18px}
+.big-timer{margin-top:26px;display:flex;align-items:center;justify-content:center;gap:12px;height:86px;border-radius:22px;background:var(--card);box-shadow:var(--shadow);font-size:40px;font-weight:700;font-variant-numeric:tabular-nums}
+.big-timer svg{width:32px;height:32px}
+.big-timer[data-state="run"]{background:var(--accent);color:#fff}
+.big-timer[data-state="pause"]{background:var(--gold-soft)}
+.big-timer[data-state="done"]{background:var(--olive);color:#fff}
+.cook-ings{margin-top:22px;background:var(--card);border-radius:var(--r);padding:6px 14px}
+.cook-foot{display:grid;grid-template-columns:auto 1fr;gap:10px;padding:12px 16px calc(env(safe-area-inset-bottom) + 12px);border-top:1px solid var(--line);background:var(--bg)}
+.cook-foot .btn{height:58px;font-size:17px}
+
+/* ---------- shopping / kitchen / timers ---------- */
+.page-h{padding:calc(env(safe-area-inset-top) + 20px) 0 8px}
+.page-h h1{font-size:30px}
+.page-h p{margin:6px 0 0;color:var(--ink-2)}
+.shop-recipes{display:flex;flex-direction:column;gap:8px;margin:14px 0}
+.shop-r{display:flex;align-items:center;gap:12px;background:var(--card);border-radius:14px;padding:8px 10px 8px 8px;box-shadow:var(--shadow)}
+.shop-r .ph{width:52px;height:52px;border-radius:10px;flex:none}
+.shop-r .nm{flex:1;min-width:0;font-weight:700;font-size:15px;line-height:1.2}
+.shop-r .nm small{display:block;font-weight:500;color:var(--ink-2);font-size:12.5px}
+.empty{text-align:center;padding:48px 20px;color:var(--ink-2)}
+.empty svg{width:44px;height:44px;color:var(--ink-3);margin-bottom:8px}
+.kgroup h2{font-size:19px;margin:22px 0 10px}
+.kitem{background:var(--card);border-radius:14px;padding:12px 14px;margin-bottom:8px;box-shadow:var(--shadow)}
+.kitem b{display:block}
+.kitem p{margin:3px 0 0;color:var(--ink-2);font-size:14px}
+.kitem .uses{margin-top:8px;display:flex;flex-wrap:wrap;gap:6px}
+.kitem .uses a{font-size:12px;font-weight:700;padding:3px 9px;border-radius:999px;background:var(--bg-2);color:var(--ink-2)}
+.trow{display:flex;align-items:center;gap:12px;background:var(--card);border-radius:16px;padding:12px 14px;margin-bottom:10px;box-shadow:var(--shadow)}
+.trow .tm{font-size:26px;font-weight:700;font-variant-numeric:tabular-nums;min-width:92px}
+.trow .lb{flex:1;min-width:0;font-size:14px;line-height:1.3}
+.trow .lb small{display:block;color:var(--ink-2)}
+.trow.done .tm{color:var(--olive)}
+.callout{background:var(--bg-2);border-radius:14px;padding:12px 14px;font-size:14px;color:var(--ink-2);margin:14px 0}
+
+/* ---------- chrome ---------- */
+.tabbar{position:fixed;left:0;right:0;bottom:0;z-index:40;display:flex;justify-content:space-around;height:calc(var(--tab-h) + env(safe-area-inset-bottom));padding-bottom:env(safe-area-inset-bottom);background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(14px);border-top:1px solid var(--line)}
+.tabbar a{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;font-size:11.5px;font-weight:700;color:var(--ink-3);position:relative}
+.tabbar a.on{color:var(--accent)}
+.badge{position:absolute;top:8px;left:calc(50% + 6px);min-width:18px;height:18px;border-radius:9px;background:var(--accent);color:#fff;font-size:11px;display:grid;place-items:center;padding:0 5px}
+.timer-pill{position:fixed;z-index:45;left:50%;transform:translateX(-50%);bottom:calc(var(--tab-h) + env(safe-area-inset-bottom) + 10px);display:flex;align-items:center;gap:10px;height:46px;padding:0 18px 0 14px;border-radius:999px;background:var(--ink);color:var(--bg);font-weight:700;box-shadow:0 10px 30px rgba(0,0,0,.25);font-variant-numeric:tabular-nums;white-space:nowrap;max-width:calc(100vw - 32px)}
+.timer-pill span{overflow:hidden;text-overflow:ellipsis}
+.timer-pill.ring{background:var(--accent);animation:ring .6s ease-in-out infinite alternate}
+@keyframes ring{to{transform:translateX(-50%) scale(1.04)}}
+.toast{position:fixed;z-index:60;left:50%;top:calc(env(safe-area-inset-top) + 12px);transform:translate(-50%,-140%);background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:12px;font-weight:600;font-size:14px;box-shadow:var(--shadow);transition:transform .3s;max-width:calc(100vw - 32px);text-align:center}
+.toast.show{transform:translate(-50%,0)}
+.sheet-backdrop{position:fixed;inset:0;z-index:70;background:rgba(20,12,6,.45)}
+.sheet{position:fixed;z-index:71;left:0;right:0;bottom:0;max-height:86vh;overflow-y:auto;background:var(--card);border-radius:24px 24px 0 0;padding:10px 18px calc(env(safe-area-inset-bottom) + 20px);max-width:760px;margin:0 auto;animation:up .25s ease-out}
+@keyframes up{from{transform:translateY(40px);opacity:0}}
+.sheet .grab{width:40px;height:5px;border-radius:3px;background:var(--line);margin:0 auto 14px}
+.sheet h2{font-size:22px;margin-bottom:6px}
+.people{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:14px 0}
+.people button{display:flex;align-items:center;gap:10px;padding:12px;border-radius:14px;background:var(--bg-2);font-weight:700;text-align:left}
+.people button[aria-pressed="true"]{outline:2px solid var(--accent)}
+.field{width:100%;height:48px;border-radius:12px;border:1px solid var(--line);background:var(--bg);padding:0 14px;outline:none}
+.field:focus{border-color:var(--accent)}
+.hidden{display:none!important}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+[hidden]{display:none!important}
+.ph .fallback{display:none}
+.ph.fail .fallback,.ph.noimg .fallback{display:grid}
+
+</style>
+</head>
+<body>
+<!-- Netlify Forms: skrytý formulář, aby Netlify zachytával zpětnou vazbu z appky -->
+<form name="zpetna-vazba" data-netlify="true" netlify-honeypot="bot-field" hidden>
+  <input name="bot-field"><input name="typ"><input name="recept"><input name="nazev"><input name="kdo">
+  <input name="hodnoceni"><input name="verze"><input name="porce"><input name="datum"><textarea name="text"></textarea>
+</form>
+
+<div id="app"></div>
+
+<nav class="tabbar" id="tabbar" aria-label="Hlavní navigace">
+  <a href="#/" data-tab="recepty"><svg><use href="#i-book"/></svg><span>Recepty</span></a>
+  <a href="#/nakup" data-tab="nakup"><svg><use href="#i-cart"/></svg><span>Nákup</span><b class="badge" id="shopBadge" hidden></b></a>
+  <a href="#/kuchyne" data-tab="kuchyne"><svg><use href="#i-pot"/></svg><span>Kuchyně</span></a>
+  <a href="#/casovace" data-tab="casovace"><svg><use href="#i-timer"/></svg><span>Časovače</span><b class="badge" id="timerBadge" hidden></b></a>
+</nav>
+
+<button class="timer-pill" id="timerPill" hidden></button>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<div class="sheet-backdrop" id="sheetBackdrop" hidden></div>
+<div class="sheet" id="sheet" role="dialog" aria-modal="true" hidden></div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5v-15Z"/><path d="M4 20.5A2.5 2.5 0 0 0 6.5 23H20v-5"/></symbol>
+    <symbol id="i-cart" viewBox="0 0 24 24"><path d="M3 4h2l2.4 11.2a2 2 0 0 0 2 1.6h7.8a2 2 0 0 0 2-1.5L21 8H6.2"/><circle cx="10" cy="20.5" r="1.3"/><circle cx="17" cy="20.5" r="1.3"/></symbol>
+    <symbol id="i-pot" viewBox="0 0 24 24"><path d="M4 10h16v6a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5v-6Z"/><path d="M2 10h20M9 6.5c0-1 .8-1.5.8-2.5M13 6.5c0-1 .8-1.5.8-2.5"/></symbol>
+    <symbol id="i-timer" viewBox="0 0 24 24"><circle cx="12" cy="13.5" r="7.5"/><path d="M12 13.5V9.5M9.5 2.5h5M18.5 6.5l1.5-1.5"/></symbol>
+    <symbol id="i-back" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5.5v13l10.5-6.5L8 5.5Z" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="i-pause" viewBox="0 0 24 24"><path d="M8 5v14M16 5v14"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.2-4.2"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.8-3.5 3.3-5.5 6.5-5.5s5.7 2 6.5 5.5"/><path d="M16 4.8a3.5 3.5 0 0 1 0 6.4M18.5 14.8c1.6.8 2.6 2.5 3 5.2"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3l1.8 5.4L19 10l-5.2 1.6L12 17l-1.8-5.4L5 10l5.2-1.6L12 3Z"/></symbol>
+    <symbol id="i-chef" viewBox="0 0 24 24"><path d="M7 14.5V20h10v-5.5"/><path d="M7 14.5a4 4 0 0 1-1.5-7.6 4.5 4.5 0 0 1 8.3-2.4 4 4 0 0 1 4.7 5.9A4 4 0 0 1 17 14.5H7Z"/></symbol>
+    <symbol id="i-camera" viewBox="0 0 24 24"><path d="M4 8h3l1.6-2.5h6.8L17 8h3v11H4V8Z"/><circle cx="12" cy="13.5" r="3.5"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4V5Z"/></symbol>
+    <symbol id="i-up" viewBox="0 0 24 24"><path d="M7 10.5 12 4l5 6.5M12 4v8"/><path d="M4 14h4l1 6h6l1-6h4"/></symbol>
+    <symbol id="i-thumb" viewBox="0 0 24 24"><path d="M7 11v9H4v-9h3Zm0 0 4-7c1.6 0 2.5 1 2.2 2.6L12.6 10H19a2 2 0 0 1 2 2.3l-1.2 6A2 2 0 0 1 17.8 20H7"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3"/></symbol>
+    <symbol id="i-trash" viewBox="0 0 24 24"><path d="M4 7h16M9 7V4h6v3M6.5 7l1 13h9l1-13"/></symbol>
+    <symbol id="i-history" viewBox="0 0 24 24"><path d="M3.5 12a8.5 8.5 0 1 0 2.6-6.1L3.5 8.5"/><path d="M3.5 4v4.5H8M12 8v4.5l3 1.5"/></symbol>
+    <symbol id="i-left" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></symbol>
+    <symbol id="i-right" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></symbol>
+    <symbol id="i-list" viewBox="0 0 24 24"><path d="M9 6h11M9 12h11M9 18h11M4.5 6h.01M4.5 12h.01M4.5 18h.01"/></symbol>
+  </defs>
+</svg>
+
+<script>
+/* Kuchařka — data receptů.
+   Tento soubor upravuje Claude: nový recept = nový objekt v RECIPES, úprava = zvýšit version a přidat záznam do history.
+   Jednotky: g, ml, tbsp, tsp, ks, nebo vlastní text (neškáluje se, pokud scale:false). a:0 = "podle chuti". */
+
+const WM = f => 'https://commons.wikimedia.org/wiki/Special:FilePath/' + f + '?width=900';
+const WP = f => 'https://commons.wikimedia.org/wiki/File:' + f;
+
+window.APP_VERSION = '2026-10-21.1';
+
+window.KITCHEN = {
+  intro: 'Plně vybavená kuchyně. Recepty píšu přímo na tohle vybavení — když něco přibude nebo se něco chová jinak, napiš mi to a doplním.',
+  items: [
+    { id: 'sklokeramika', name: 'Sklokeramická deska', group: 'Vaření', note: 'Elektrická — reaguje pomalu. Ztlumit o chvilku dřív, než se zdá potřeba. U papiňáku po natlakování stáhnout na ⅓ výkonu.' },
+    { id: 'trouba', name: 'Horkovzdušná trouba', group: 'Vaření', note: 'Teploty v receptech jsou pro horní/spodní ohřev; s horkovzduchem ubrat cca 20 °C.' },
+    { id: 'mikrovlnka', name: 'Mikrovlnka', group: 'Vaření', note: 'Na ohřev zbytků a předvaření brambor (tortilla).' },
+    { id: 'papinak', name: 'Papiňák', group: 'Vaření', note: 'Guláš 35 min pod tlakem, paprikáš. Po natlakování plotnu hned stáhnout.' },
+    { id: 'ryzovar', name: 'Rýžovar', group: 'Vaření', note: 'Obvykle 1–2 hrnky rýže; je rychlejší než 40minutové návody — řídit se pípnutím.' },
+    { id: 'gril', name: 'Kontaktní gril (oboustranný)', group: 'Vaření', note: 'Maso i tousty.' },
+    { id: 'robot', name: 'Bosch MUM 5', group: 'Pečení', note: 'Na máslo s cukrem míchací metla (ne šlehací), stupeň 4. Vejce stupeň 3, mouka stupeň 1 jen do spojení.' },
+    { id: 'forma', name: 'Hranatá forma cca 30 × 11 cm', group: 'Pečení', note: 'Bábovka, banana bread. Vždy pečicí papír s přesahem.' },
+    { id: 'plech', name: 'Plech do trouby', group: 'Pečení', note: 'Vždy pečicí papír.' },
+    { id: 'pekac', name: 'Pekáč (s víkem / alobal)', group: 'Pečení', note: 'Pečená plec.' },
+    { id: 'panev24', name: 'Titanová pánev 24 cm', group: 'Pánve a hrnce', note: 'Nepřilnavá — vejce, lívance (3–4 najednou).' },
+    { id: 'wok', name: 'Wok s kamenným povrchem', group: 'Pánve a hrnce', note: 'Široké dno — asijská jídla, větší dávky, těstoviny s omáčkou v jednom.' },
+    { id: 'hrnec', name: 'Hrnce', group: 'Pánve a hrnce', note: 'Polévky, guláš, rizoto.' },
+    { id: 'vaha', name: 'Kuchyňská váha', group: 'Pomocníci', note: 'Proto jsou sypké suroviny v gramech.' }
+  ]
+};
+
+window.PEOPLE = ['Lukáš', 'Tomáš', 'Anička'];
+
+window.RECIPES = [
+{
+  id: 'kure-kari', title: 'Kuře na žlutém kari', subtitle: 'Mírné kari s kokosovým mlékem na jedné pánvi, bez chilli.',
+  category: 'Hlavní jídlo', time: 35, servings: 4, equipment: ['wok', 'ryzovar'], tags: ['hit', 'kure', 'ryze', 'dvakrat'],
+  kidsLiked: true,
+  photo: { src: WM('Creamy_Chicken_Curry.jpg'), page: WP('Creamy_Chicken_Curry.jpg') },
+  key: 'Koření sypej až do pánve stažené z plotny. V horkém tuku se rozvoní za pár vteřin, na přímém ohni by stejně rychle zhořklo.',
+  ingredients: [
+    { n: 'kuřecí prsa, kostky ~2,5 cm', a: 550, u: 'g' },
+    { n: 'velká cibule', a: 1, u: 'ks' },
+    { n: 'stroužky česneku', a: 2, u: 'ks' },
+    { n: 'řepkový olej', a: 2, u: 'tbsp' },
+    { n: 'kari koření (nepálivé)', a: 1.5, u: 'tbsp' },
+    { n: 'mletá kurkuma', a: 1, u: 'tsp' },
+    { n: 'bramborový škrob', a: 1, u: 'tbsp' },
+    { n: 'kokosové mléko', a: 400, u: 'ml' },
+    { n: 'kuřecí vývar (bezlepkový) nebo voda', a: 150, u: 'ml' },
+    { n: 'sůl', a: 1, u: 'tsp' },
+    { n: 'cukr', a: 1, u: 'tsp' },
+    { n: 'citronová šťáva', a: 1, u: 'tbsp' },
+    { n: 'rýže', a: 300, u: 'g' }
+  ],
+  steps: [
+    { t: 'Nachystat', d: 'Kuře nakrájej na kostky a osol polovinou soli. Nakrájej cibuli, prolisuj česnek. Kari, kurkumu a škrob smíchej v malé misce — budeš je sypat rychle.' },
+    { t: 'Rýže', d: 'Pusť rýži v rýžovaru. Kari stihneš mezitím.', s: 720 },
+    { t: 'Cibule', d: 'Ve woku rozehřej olej a na středním stupni osmahni cibuli doměkka a dosklovata. Poslední minutu přidej česnek.', s: 360 },
+    { t: 'Koření mimo plotnu', d: 'Stáhni wok z plotny. Vsyp směs koření se škrobem a asi půl minuty míchej v horkém tuku.', s: 40, key: true },
+    { t: 'Zalít', d: 'Vrať na mírný stupeň a za stálého míchání přilévej kokosové mléko a vývar. Rozmíchej hrudky a nech přijít k varu.' },
+    { t: 'Dovařit kuře', d: 'Vlož syrové kuře do bublající omáčky, ztlum na minimum a vař pod pokličkou. Nesmí prudce vřít, kuře by vyschlo.', s: 720 },
+    { t: 'Dochutit', d: 'Vmíchej cukr, citron a zbytek soli. Nech 5 minut odstát mimo plotnu, omáčka zhoustne.', s: 300 }
+  ],
+  tips: [
+    'Kuře nesmaž předem — když se táhne přímo v omáčce, zůstane měkké i druhý den.',
+    'Kari dej nejdřív 1 tbsp, ochutnej po zalití a případně přidej.',
+    'Řídká omáčka: poslední 3 minuty bez pokličky. Hustá: přilij vývar.',
+    'Dospělí si přidají chilli na talíři, dětská porce zůstane jemná.',
+    'Dvojitá dávka: v lednici vydrží 3 dny a druhý den chutná líp.'
+  ],
+  notes: [{ who: 'Lukáš', date: '2026-09', text: 'Děti snědly dva dny po sobě, zabralo.' }],
+  version: 2, updated: '2026-10-21', source: 'chat 16. 10. 2026',
+  history: [{ v: 2, date: '2026-10-21', text: 'Hladká mouka nahrazena bramborovým škrobem (bezlepkové).' }]
+},
+{
+  id: 'kureci-testoviny', title: 'Kuřecí těstoviny s paprikou', subtitle: 'Rajčatová omáčka z passaty, jemná pro děti, vše ve woku.',
+  category: 'Hlavní jídlo', time: 35, servings: 4, equipment: ['wok', 'hrnec'], tags: ['kure', 'testoviny', 'rychle', 'dvakrat'],
+  photo: { src: WM('Spaghetti_al_Pomodoro.JPG'), page: WP('Spaghetti_al_Pomodoro.JPG') },
+  key: 'Mletou papriku vmíchej až po stažení woku z plotny — na rozpálené plotně se hned připálí a zhořkne.',
+  ingredients: [
+    { n: 'bezlepkové těstoviny', a: 400, u: 'g' },
+    { n: 'kuřecí prsa', a: 500, u: 'g' },
+    { n: 'cibule', a: 1, u: 'ks' },
+    { n: 'stroužky česneku', a: 3, u: 'ks' },
+    { n: 'červená paprika', a: 1, u: 'ks' },
+    { n: 'passata', a: 500, u: 'ml' },
+    { n: 'olej', a: 2, u: 'tbsp' },
+    { n: 'sůl', a: 1, u: 'tsp' },
+    { n: 'sladká mletá paprika', a: 1, u: 'tsp' },
+    { n: 'oregano nebo bazalka (sušené)', a: 1, u: 'tsp' },
+    { n: 'cukr (proti kyselosti)', a: 0.25, u: 'tsp' },
+    { n: 'Rama nebo máslo', a: 1, u: 'tbsp' }
+  ],
+  steps: [
+    { t: 'Příprava', d: 'Kuře na kostky cca 2 cm, cibuli nadrobno, papriku na proužky, česnek nasekej.' },
+    { t: 'Těstoviny', d: 'Osolenou vodu přiveď k varu, vař těstoviny podle obalu. Před slitím odeber hrnek vody.', s: 600 },
+    { t: 'Cibule a paprika', d: 'Ve woku na oleji restuj cibuli a papriku na středním stupni, až cibule zesklovatí.', s: 240 },
+    { t: 'Kuře', d: 'Přidej kuře a sůl, opékej, dokud maso nezbělá ze všech stran.', s: 360 },
+    { t: 'Česnek a koření', d: 'Přidej česnek a minutu míchej. Stáhni wok z plotny a vmíchej papriku a oregano.', s: 60, key: true },
+    { t: 'Omáčka', d: 'Vrať na plotnu, vlij passatu, přidej cukr a nech mírně probublávat. Hustou omáčku uvolni vodou z těstovin.', s: 720 },
+    { t: 'Spojení', d: 'Vmíchej Ramu, přidej slité těstoviny a promíchej. Dochuť solí.' }
+  ],
+  tips: [
+    'Vodu na těstoviny postav, když začneš restovat cibuli — bude to hotové najednou.',
+    'Škrobová voda z těstovin omáčku spojí a přilne k těstovinám.',
+    'Hrnec od těstovin hned vypláchni horkou vodou, škrob nezaschne.',
+    'Krémovější verze: na konci pár tbsp kokosového mléka místo Ramy.'
+  ],
+  notes: [], version: 1, updated: '2026-10-19', source: 'chat 19. 10. 2026', history: []
+},
+{
+  id: 'kureci-rizoto', title: 'Kuřecí rizoto s paprikou', subtitle: 'Krémová rýže v jednom hrnci, jemná pro děti.',
+  category: 'Hlavní jídlo', time: 40, servings: 4, equipment: ['hrnec'], tags: ['kure', 'ryze', 'jedno-nadobi', 'dvakrat'],
+  photo: { src: WM('Risotto_(1).jpg'), page: WP('Risotto_(1).jpg') },
+  key: 'Horký vývar přilévej postupně ve třech dávkách a občas zamíchej. Míchání uvolní škrob a rizoto je krémové i bez smetany.',
+  ingredients: [
+    { n: 'rýže arborio (nebo kulatozrnná)', a: 300, u: 'g' },
+    { n: 'kuřecí prsa', a: 500, u: 'g' },
+    { n: 'cibule', a: 1, u: 'ks' },
+    { n: 'stroužky česneku', a: 2, u: 'ks' },
+    { n: 'červená paprika', a: 1, u: 'ks' },
+    { n: 'horký vývar (bezlepkový bujón)', a: 1000, u: 'ml' },
+    { n: 'olej', a: 1, u: 'tbsp' },
+    { n: 'Rama nebo máslo', a: 2, u: 'tbsp' },
+    { n: 'sůl', a: 0.5, u: 'tsp' },
+    { n: 'sladká mletá paprika', a: 0.5, u: 'tsp' },
+    { n: 'eidam, nastrouhaný', a: 60, u: 'g' },
+    { n: 'citronová šťáva', a: 1, u: 'tsp' }
+  ],
+  steps: [
+    { t: 'Příprava', d: 'Kuře na menší kostky, cibuli nadrobno, papriku na kostičky, česnek nasekej. Vývar připrav v konvici a rozpusť v něm bujón.' },
+    { t: 'Cibule a paprika', d: 'V hrnci rozehřej olej a lžíci Ramy, restuj cibuli s paprikou, až zesklovatí.', s: 240 },
+    { t: 'Kuře', d: 'Přidej kuře a sůl, opékej, dokud nezbělá.', s: 300 },
+    { t: 'Rýže', d: 'Přidej česnek a suchou rýži a míchej, až zrnka na okrajích zprůsvitní. Stáhni z plotny a vmíchej papriku.', s: 120 },
+    { t: 'První dávka vývaru', d: 'Vrať na plotnu, vlij třetinu vývaru a nech mírně pobublávat. Občas zamíchej.', s: 360, key: true },
+    { t: 'Druhá dávka', d: 'Až se vývar skoro vsákne, přilij další třetinu.', s: 360 },
+    { t: 'Poslední dávka', d: 'Přilij zbytek a vař, až je rýže měkká, uprostřed lehce pevná. Hustou uvolni horkou vodou.', s: 360 },
+    { t: 'Dokončení', d: 'Stáhni z plotny, vmíchej zbytek Ramy, sýr a citron. Přikryj, nech dojít a dochuť.', s: 120 }
+  ],
+  tips: [
+    'Rýži nepropírej — škrob na povrchu je přesně to, co chceš.',
+    'Elektrickou plotnu stáhni na minimum o chvilku dřív, rizoto ještě dotáhne.',
+    'Rizoto má být spíš tekoucí než suchá hromádka.',
+    'Hrášek nebo kukuřici ze sklenice přidej v posledním kroku, děti to mají rády.'
+  ],
+  notes: [], version: 1, updated: '2026-10-20', source: 'chat 20. 10. 2026', history: []
+},
+{
+  id: 'fazolova-polevka', title: 'Fazolová polévka s rajčaty', subtitle: 'Hustá polévka z plechovek, zahuštěná fazolemi místo mouky.',
+  category: 'Polévka', time: 30, servings: 4, equipment: ['hrnec'], tags: ['polevka', 'rychle', 'jedno-nadobi'],
+  photo: { src: WM('Fasolka_po_breto%C5%84sku.jpg'), page: WP('Fasolka_po_breto%C5%84sku.jpg') },
+  key: 'Asi třetinu fazolí rozmačkej přímo v hrnci. Polévka zhoustne bez mouky a jíšky.',
+  ingredients: [
+    { n: 'fazole v plechovce (400 g)', a: 2, u: 'ks' },
+    { n: 'krájená rajčata z plechovky', a: 400, u: 'g' },
+    { n: 'horký vývar (bezlepkový bujón)', a: 750, u: 'ml' },
+    { n: 'cibule', a: 1, u: 'ks' },
+    { n: 'stroužky česneku', a: 2, u: 'ks' },
+    { n: 'šunka (volitelně)', a: 100, u: 'g' },
+    { n: 'olej', a: 2, u: 'tbsp' },
+    { n: 'sladká mletá paprika', a: 1, u: 'tsp' },
+    { n: 'majoránka', a: 1, u: 'tsp' },
+    { n: 'sůl', a: 0.5, u: 'tsp' },
+    { n: 'cukr', a: 0.25, u: 'tsp' },
+    { n: 'ocet nebo citronová šťáva', a: 1, u: 'tsp' }
+  ],
+  steps: [
+    { t: 'Příprava', d: 'Cibuli nadrobno, česnek nasekej, šunku na kostičky. Fazole sceď a propláchni, připrav horký vývar.' },
+    { t: 'Cibule a šunka', d: 'V hrnci na oleji restuj cibuli a šunku, až cibule zesklovatí.', s: 300 },
+    { t: 'Česnek a paprika', d: 'Přidej česnek a minutu míchej. Stáhni z plotny a vmíchej papriku.', s: 60 },
+    { t: 'Vaření', d: 'Vrať na plotnu, přidej rajčata, vývar, fazole, sůl a cukr. Přiveď k varu a nech mírně probublávat.', s: 900 },
+    { t: 'Zahuštění', d: 'Šťouchadlem rozmačkej asi třetinu fazolí přímo v hrnci a promíchej.', key: true },
+    { t: 'Majoránka', d: 'Vmíchej rozmnutou majoránku a povař.', s: 180 },
+    { t: 'Dochucení', d: 'Stáhni z plotny, přidej ocet nebo citron a dochuť solí.' }
+  ],
+  tips: [
+    'Fazole propláchni — zbavíš se slizkého nálevu.',
+    'Majoránku až na konci, dlouhým varem ztrácí vůni.',
+    'Druhý den je polévka hustší — při ohřevu přilij vodu.',
+    'Fazole Heinz v omáčce fungují taky, jen vynech cukr a zkontroluj lepek.'
+  ],
+  notes: [], version: 1, updated: '2026-10-20', source: 'chat 20. 10. 2026', history: []
+},
+{
+  id: 'veprova-plec', title: 'Pečená vepřová plec s kmínem', subtitle: 'Klasika s výpekem, k hranolkám. 1,2 kg masa = 4 porce.',
+  category: 'Hlavní jídlo', time: 160, servings: 4, equipment: ['trouba', 'pekac'], tags: ['veprove', 'trouba', 'vikend'],
+  photo: { src: WM('Knedlo_vepro_zelo_czech_food.jpg'), page: WP('Knedlo_vepro_zelo_czech_food.jpg') },
+  key: 'Dno pekáče nesmí nikdy vyschnout. Každých 30 minut zkontroluj a dolij horkou vodu, jinak se výpek připálí a zhořkne.',
+  ingredients: [
+    { n: 'vepřová plec (s kůží nebo tukem)', a: 1200, u: 'g' },
+    { n: 'sůl', a: 2, u: 'tsp' },
+    { n: 'kmín celý', a: 1, u: 'tbsp' },
+    { n: 'cibule', a: 1, u: 'ks' },
+    { n: 'stroužky česneku (nepovinné)', a: 3, u: 'ks' },
+    { n: 'sádlo nebo máslo', a: 1, u: 'tbsp' },
+    { n: 'voda na podlévání (+ dolévat)', a: 300, u: 'ml' }
+  ],
+  steps: [
+    { t: 'Příprava masa', d: 'Kůži nebo tuk nařízni do mřížky (ne až do masa). Maso osuš papírovou utěrkou.' },
+    { t: 'Okořenění', d: 'Vetři sůl, kmín a prolisovaný česnek. Nech 20 minut odpočinout a předehřej troubu na 170 °C.', s: 1200 },
+    { t: 'Do pekáče', d: 'Na dno cibuli na měsíčky a sádlo, maso kůží nahoru. Podlij vodou asi 1 cm.' },
+    { t: 'Pečení přikryté', d: 'Přikryj víkem nebo alobalem, peč na 170 °C. Každých 30 minut přelij šťávou a dolij vodu.', s: 5400, key: true },
+    { t: 'Pečení odkryté', d: 'Odkryj, zvyš na 200 °C a peč dozlatova. Vodu jen dolévej, maso už nepřelévej.', s: 1800 },
+    { t: 'Odpočinek', d: 'Maso na prkénko, volně přikryj alobalem.', s: 600 },
+    { t: 'Výpek', d: 'Výpek přeceď, cibuli rozmačkej přes sítko. Když je ho málo, dolij vodu, povař a vyškrábej připečené kousky.', s: 300 },
+    { t: 'Podávání', d: 'Krájej na plátky přes vlákno, přelij výpekem.' }
+  ],
+  tips: [
+    'Na večeři v 18:30 dej maso do trouby kolem 16:00.',
+    'Měkkost: vidlička jde snadno. Když klade odpor, ještě 15–20 minut přikryté.',
+    'Hranolky dej do trouby, jakmile maso odpočívá (220 °C, cca 20 min).',
+    'Pekáč namoč hned po vylití výpeku.'
+  ],
+  notes: [], version: 1, updated: '2026-10-18', source: 'chat 18. 10. 2026', history: []
+},
+{
+  id: 'sekana-plech', title: 'Sekaná na plechu s bramborami', subtitle: 'Z kila mletého vepřového, vše na jednom plechu.',
+  category: 'Hlavní jídlo', time: 75, servings: 6, equipment: ['trouba', 'plech'], tags: ['veprove', 'trouba', 'jedno-nadobi', 'dvakrat'],
+  photo: { src: WM('Meatloaf_on_white_plate.jpg'), page: WP('Meatloaf_on_white_plate.jpg') },
+  key: 'Směs hněť rukama jen krátce, dokud se nespojí. Přepracovaná sekaná je tuhá.',
+  ingredients: [
+    { n: 'mleté vepřové', a: 1000, u: 'g' },
+    { n: 'vejce', a: 2, u: 'ks' },
+    { n: 'střední cibule', a: 1, u: 'ks' },
+    { n: 'stroužky česneku', a: 3, u: 'ks' },
+    { n: 'menší syrová brambora (do směsi)', a: 1, u: 'ks' },
+    { n: 'bramborový škrob', a: 2, u: 'tbsp' },
+    { n: 'hořčice (bezlepková)', a: 1, u: 'tbsp' },
+    { n: 'sůl do masa', a: 2, u: 'tsp' },
+    { n: 'sušená majoránka', a: 1, u: 'tbsp' },
+    { n: 'mletý pepř', a: 0.5, u: 'tsp' },
+    { n: 'brambory na plech', a: 1000, u: 'g' },
+    { n: 'olej', a: 2, u: 'tbsp' },
+    { n: 'sůl na brambory', a: 1, u: 'tsp' },
+    { n: 'kečup na potření (nepovinné)', a: 2, u: 'tbsp' }
+  ],
+  steps: [
+    { t: 'Trouba', d: 'Předehřej na 200 °C (horkovzduch 180 °C). Plech vylož pečicím papírem.' },
+    { t: 'Brambory', d: 'Brambory nakrájej na měsíčky, promíchej s olejem a solí přímo na plechu a rozlož po okrajích.' },
+    { t: 'Směs', d: 'Do mísy maso, vejce, najemno nastrouhanou cibuli a bramboru, česnek, škrob, hořčici, sůl, majoránku a pepř. Krátce prohněť.', key: true },
+    { t: 'Tvarování', d: 'Mokrýma rukama vytvaruj dvě šišky a polož doprostřed plechu.' },
+    { t: 'První pečení', d: 'Peč 25 minut.', s: 1500 },
+    { t: 'Obrácení', d: 'Brambory promíchej, sekanou potři kečupem. Peč dalších 25 minut.', s: 1500 },
+    { t: 'Odpočinek', d: 'Nech sekanou 10 minut odpočinout, než ji nakrájíš.', s: 600 }
+  ],
+  tips: [
+    'Cibule syrová a nastrouhaná — nemusíš ji smažit a ušetříš pánev.',
+    'Hotovo, když vytéká čirá šťáva, s teploměrem aspoň 72 °C uvnitř.',
+    'Sekaná jde zamrazit na plátky proložené papírem (2–3 měsíce). Brambory ne.',
+    'Misku od směsi namoč hned.'
+  ],
+  notes: [], version: 1, updated: '2026-10-10', source: 'chat 10. 10. 2026', history: []
+},
+{
+  id: 'veprovy-gulas', title: 'Vepřový guláš z plece', subtitle: 'Klasika se sekaným kmínem, zahuštěná škrobem. 1 kg masa = 5 porcí.',
+  category: 'Hlavní jídlo', time: 135, servings: 5, equipment: ['hrnec', 'papinak'], tags: ['veprove', 'papinak', 'dvakrat'],
+  photo: { src: WM('Hospodsky_gulasek.jpg'), page: WP('Hospodsky_gulasek.jpg') },
+  key: 'Papriku vmíchej do hrnce staženého z plotny. Na plotně by zhořkla.',
+  ingredients: [
+    { n: 'vepřová plec, kostky cca 3 cm', a: 1000, u: 'g' },
+    { n: 'cibule (cca 4 velké)', a: 700, u: 'g' },
+    { n: 'sádlo nebo olej', a: 3, u: 'tbsp' },
+    { n: 'sladká paprika', a: 3, u: 'tbsp' },
+    { n: 'pálivá paprika (volitelně)', a: 1, u: 'tsp' },
+    { n: 'kmín celý', a: 2, u: 'tsp' },
+    { n: 'rajčatový protlak', a: 2, u: 'tbsp' },
+    { n: 'stroužky česneku', a: 4, u: 'ks' },
+    { n: 'majoránka', a: 2, u: 'tsp' },
+    { n: 'sůl', a: 2, u: 'tsp' },
+    { n: 'mletý pepř', a: 0.5, u: 'tsp' },
+    { n: 'voda', a: 1000, u: 'ml' },
+    { n: 'bramborový škrob', a: 2, u: 'tbsp' }
+  ],
+  steps: [
+    { t: 'Kmín', d: 'Nasyp na prkénko se špetkou soli a nasekej velkým nožem, dokud se nezlomí většina zrnek.' },
+    { t: 'Krájení', d: 'Cibuli nadrobno, maso na kostky.' },
+    { t: 'Restování cibule', d: 'Na sádle restuj cibuli za častého míchání do zlatohněda. Tady vzniká chuť i hustota.', s: 1200 },
+    { t: 'Maso', d: 'Přidej maso, osol, opepři a opékej, až zbělá.', s: 600 },
+    { t: 'Paprika mimo plotnu', d: 'Odstav hrnec z plotny a vmíchej papriku.', key: true },
+    { t: 'Kmín a protlak', d: 'Přidej kmín a protlak, podlij vodou, aby bylo maso skoro ponořené.' },
+    { t: 'Dušení', d: 'Přiveď k varu, ztlum a duš pod pokličkou. Občas promíchej a podlij. (Papiňák: 35 min pod tlakem.)', s: 5400 },
+    { t: 'Dochucení', d: 'Přidej česnek a majoránku. Škrob rozmíchej ve studené vodě, vlij za stálého míchání a provař.', s: 300 },
+    { t: 'Odpočinek', d: 'Stáhni z plotny a nech pod pokličkou dojít.', s: 600 }
+  ],
+  tips: [
+    'Papiňák: po natlakování stáhni plotnu na ⅓ výkonu (3–4 z 9).',
+    'Pálivou papriku pro děti vynech, dospělí si přisypou chilli.',
+    'Druhý den je guláš lepší — vař rovnou dvojitou dávku.',
+    'Příloha: brambory nebo rýže (klasický knedlík má lepek).'
+  ],
+  notes: [], version: 1, updated: '2026-10-08', source: 'chat 8. 10. 2026', history: []
+},
+{
+  id: 'kureci-polevka', title: 'Kuřecí polévka s rýží a zeleninou', subtitle: 'Vývarová, hotová za 30 minut v jednom hrnci.',
+  category: 'Polévka', time: 30, servings: 4, equipment: ['hrnec'], tags: ['polevka', 'kure', 'rychle', 'jedno-nadobi'],
+  photo: { src: WM('Bowl_of_chicken_soup.jpg'), page: WP('Bowl_of_chicken_soup.jpg') },
+  key: 'Zeleninu nejdřív pořádně orestuj dozlatova. Polévka pak chutná jako poctivý vývar, i když se vaří jen chvilku.',
+  ingredients: [
+    { n: 'olej nebo máslo', a: 1, u: 'tbsp' },
+    { n: 'cibule', a: 1, u: 'ks' },
+    { n: 'mrkev', a: 3, u: 'ks' },
+    { n: 'petržel (kořen)', a: 1, u: 'ks' },
+    { n: 'stroužky česneku', a: 2, u: 'ks' },
+    { n: 'kuřecí prsa', a: 400, u: 'g' },
+    { n: 'voda', a: 1500, u: 'ml' },
+    { n: 'bujón (bezlepkový)', a: 2, u: 'ks' },
+    { n: 'rýže', a: 80, u: 'g' },
+    { n: 'mražený hrášek', a: 100, u: 'g' },
+    { n: 'petrželová nať', a: 1, u: 'hrst' },
+    { n: 'sůl', a: 0.5, u: 'tsp' }
+  ],
+  steps: [
+    { t: 'Zelenina', d: 'Cibuli najemno, mrkev a petržel na kolečka, česnek na plátky.' },
+    { t: 'Orestovat', d: 'V hrnci na oleji orestuj cibuli, mrkev a petržel dozlatova, na konci přidej česnek.', s: 300, key: true },
+    { t: 'Kuře', d: 'Kuře na malé kostky, přidej a krátce opeč, až zbělá.', s: 180 },
+    { t: 'Zalít a rýže', d: 'Zalij vodou, rozdrob bujóny, přisyp propláchnutou rýži. Vař mírně pod pokličkou.', s: 900 },
+    { t: 'Hrášek', d: 'Přidej hrášek, povař, dochuť. Vypni a vmíchej nať.', s: 180 }
+  ],
+  tips: [
+    'Rýže rovnou do polévky — nic dalšího k mytí.',
+    'Kuře krájej až po zelenině, ať nemusíš mezi tím mýt prkénko.',
+    'Stehenní řízky místo prsou jsou šťavnatější.',
+    'Druhý den rýže vývar nasaje — při ohřevu dolij vodu.'
+  ],
+  notes: [], version: 1, updated: '2026-10-10', source: 'chat 10. 10. 2026', history: []
+},
+{
+  id: 'hamburgery', title: 'Hamburgery mezi krajíci', subtitle: 'Z 500 g míchaného mletého masa, s opečeným bezlepkovým chlebem.',
+  category: 'Hlavní jídlo', time: 30, servings: 4, equipment: ['panev24'], tags: ['hit', 'rychle', 'jedno-nadobi'],
+  kidsLiked: true,
+  photo: { src: WM('Cheeseburger_maison.jpg'), page: WP('Cheeseburger_maison.jpg') },
+  key: 'Maso nesol dopředu a placky na pánvi nemačkej. Zbytek odpustí chyby.',
+  ingredients: [
+    { n: 'míchané mleté maso', a: 500, u: 'g' },
+    { n: 'plnotučná hořčice (bezlepková)', a: 1, u: 'tbsp' },
+    { n: 'stroužky česneku', a: 2, u: 'ks' },
+    { n: 'sladká mletá paprika', a: 1, u: 'tsp' },
+    { n: 'sůl', a: 1, u: 'tsp' },
+    { n: 'mletý pepř', a: 0.5, u: 'tsp' },
+    { n: 'krajíce bezlepkového chleba', a: 8, u: 'ks' },
+    { n: 'plátky sýra', a: 4, u: 'ks' },
+    { n: 'cibule', a: 1, u: 'ks' },
+    { n: 'kyselé okurky', a: 2, u: 'ks' },
+    { n: 'rajče', a: 1, u: 'ks' },
+    { n: 'olej na smažení', a: 2, u: 'tbsp' },
+    { n: 'kečup a majonéza', a: 0, u: 'podle chuti' }
+  ],
+  steps: [
+    { t: 'Ochucení', d: 'Maso, hořčici, česnek, papriku a pepř promíchej rukou jen do spojení. Sůl zatím ne.' },
+    { t: 'Placky', d: '4 placky o kus širší než krajíc, 1,5 cm silné, palcem důlek doprostřed. Do lednice.', s: 600 },
+    { t: 'Chleba', d: 'Na suché pánvi opeč krajíce z obou stran dozlatova.', s: 180 },
+    { t: 'První strana', d: 'Až teď placky osol. Na rozpálený olej je polož a nehýbej s nimi.', s: 210, key: true },
+    { t: 'Otočit a sýr', d: 'Otoč jednou, polož sýr a dosmaž. Uvnitř šťavnaté, ne růžové.', s: 180 },
+    { t: 'Odpočinek', d: 'Sundej na prkénko, ať se šťáva vsákne.', s: 180 },
+    { t: 'Složení', d: 'Krajíc s kečupem a majonézou, maso se sýrem, cibule, okurka, rajče, druhý krajíc.' }
+  ],
+  tips: [
+    'Placka se při smažení stáhne — proto širší než krajíc.',
+    'Chleba opeč ve stejné pánvi před masem, žádné nádobí navíc.',
+    'Mísu od masa hned vypláchni studenou vodou.'
+  ],
+  notes: [{ who: 'Lukáš', date: '2026-09', text: 'Děti hamburgery snědly, hit.' }],
+  version: 2, updated: '2026-10-21', source: 'chat 13. 9. 2026',
+  history: [{ v: 2, date: '2026-10-21', text: 'Chleba upřesněn na bezlepkový.' }]
+},
+{
+  id: 'mac-and-cheese', title: 'Mac and cheese se šunkou', subtitle: 'Verze se sójovým mlékem, omáčka zahuštěná škrobem.',
+  category: 'Hlavní jídlo', time: 25, servings: 4, equipment: ['hrnec'], tags: ['testoviny', 'rychle', 'jedno-nadobi'],
+  photo: { src: WM('Homemade_mac_and_cheese.jpg'), page: WP('Homemade_mac_and_cheese.jpg') },
+  key: 'Sójové mléko jen mírně probublávej a sýr přidávej mimo plotnu. Při prudkém varu se sója i sýr srazí.',
+  ingredients: [
+    { n: 'bezlepkové těstoviny (kolínka)', a: 400, u: 'g' },
+    { n: 'šunka, kostičky', a: 200, u: 'g' },
+    { n: 'máslo (nebo 3 tbsp oleje)', a: 40, u: 'g' },
+    { n: 'kukuřičný škrob (Solamyl)', a: 2, u: 'tbsp' },
+    { n: 'sójové mléko, neslazené', a: 600, u: 'ml' },
+    { n: 'nastrouhaný eidam', a: 250, u: 'g' },
+    { n: 'tavený sýr (nepovinné)', a: 2, u: 'ks' },
+    { n: 'sůl (až nakonec)', a: 0.5, u: 'tsp' },
+    { n: 'muškátový oříšek', a: 0, u: 'špetka' }
+  ],
+  steps: [
+    { t: 'Těstoviny', d: 'Vař v osolené vodě o minutu kratší než na obalu, sceď.', s: 480 },
+    { t: 'Škrob a šunka', d: 'Škrob rozmíchej se 4 tbsp studeného sójového mléka, šunku nakrájej.' },
+    { t: 'Šunka', d: 'Ve stejném hrnci rozpusť máslo a šunku krátce opeč.', s: 120 },
+    { t: 'Omáčka', d: 'Ztlum na střední stupeň, přilij zbytek mléka, nech jen mírně probublávat. Vmíchej škrob a nech zhoustnout.', s: 180 },
+    { t: 'Sýr mimo plotnu', d: 'Stáhni hrnec z plotny, přidávej sýr po hrstech a míchej, dokud se nerozpustí. Ochutnej.', key: true },
+    { t: 'Spojení', d: 'Vrať těstoviny, promíchej a nech chvilku stát.', s: 60 }
+  ],
+  tips: [
+    'Sójové mléko neslazené a bez příchutě.',
+    'Nezhoustne? Ještě ½ tbsp škrobu ve studené vodě.',
+    'Šunka bývá slaná — sol až po ochutnání. A mrkni na složení kvůli lepku.',
+    'Hrnec namoč hned, zaschlý sýr se drhne špatně.'
+  ],
+  notes: [], version: 1, updated: '2026-10-07', source: 'chat 7. 10. 2026', history: []
+},
+{
+  id: 'sladkokysele-kure', title: 'Sladkokyselé kuře', subtitle: 'S paprikou a ananasem, evropská verze bez speciálních surovin.',
+  category: 'Hlavní jídlo', time: 40, servings: 4, equipment: ['wok', 'ryzovar'], tags: ['kure', 'ryze'],
+  photo: { src: WM('Sweet_and_sour_chicken_5.jpg'), page: WP('Sweet_and_sour_chicken_5.jpg') },
+  key: 'Kuře vrať do omáčky až úplně na konci a hned podávej. Když se v ní vaří, obal změkne.',
+  ingredients: [
+    { n: 'kuřecí prsa, kostky', a: 600, u: 'g' },
+    { n: 'vejce', a: 1, u: 'ks' },
+    { n: 'bramborový škrob (obal)', a: 4, u: 'tbsp' },
+    { n: 'sůl', a: 0.5, u: 'tsp' },
+    { n: 'olej', a: 4, u: 'tbsp' },
+    { n: 'cibule', a: 1, u: 'ks' },
+    { n: 'paprika (červená a zelená)', a: 2, u: 'ks' },
+    { n: 'stroužky česneku', a: 2, u: 'ks' },
+    { n: 'ananas v kousích (plechovka)', a: 1, u: 'ks' },
+    { n: 'kečup', a: 4, u: 'tbsp' },
+    { n: 'ocet', a: 3, u: 'tbsp' },
+    { n: 'cukr', a: 2, u: 'tbsp' },
+    { n: 'bezlepková sójovka (tamari)', a: 2, u: 'tbsp' },
+    { n: 'škrob do omáčky + 3 tbsp vody', a: 1, u: 'tbsp' },
+    { n: 'rýže', a: 300, u: 'g' }
+  ],
+  steps: [
+    { t: 'Rýže', d: 'Pusť rýži v rýžovaru jako první.' },
+    { t: 'Omáčka', d: 'Smíchej šťávu z ananasu (cca 120 ml), kečup, ocet, cukr a sójovku. Přilij rozmíchaný škrob. Kousky ananasu odlož.' },
+    { t: 'Obalení', d: 'Kuře osol, promíchej s vejcem a zasyp škrobem.' },
+    { t: '1. dávka', d: 'Na polovině oleje opeč polovinu kuřete dozlatova. Vyndej.', s: 300 },
+    { t: '2. dávka', d: 'Stejně opeč druhou polovinu.', s: 300 },
+    { t: 'Zelenina', d: 'Ve stejné pánvi krátce orestuj cibuli, papriku a česnek. Má zůstat křupavá.', s: 180 },
+    { t: 'Zahuštění', d: 'Omáčku promíchej, vlij a nech probublat, dokud nezhoustne a nezleskne.', s: 120 },
+    { t: 'Spojení', d: 'Přidej ananas a kuře, jen promíchej a hned podávej.', s: 60, key: true }
+  ],
+  tips: [
+    'Kuře opékej ve dvou dávkách, přeplněná pánev ho dusí.',
+    'Dětem omáčku zvlášť na namáčení.',
+    'Zbytky skladuj kuře a omáčku odděleně.',
+    'Pánev hned namoč, zaschlý škrob se špatně drhne.'
+  ],
+  notes: [], version: 1, updated: '2026-09-22', source: 'chat 22. 9. 2026', history: []
+},
+{
+  id: 'oyakodon', title: 'Oyakodon z rýžovaru', subtitle: 'Kuře s vejcem na rýži, vše v rýžovaru.',
+  category: 'Hlavní jídlo', time: 55, servings: 4, equipment: ['ryzovar'], tags: ['kure', 'ryze', 'jedno-nadobi'],
+  photo: { src: WM('Oyakodon_003.jpg'), page: WP('Oyakodon_003.jpg') },
+  key: 'Navrstvi a nemíchej: rýže dole, kuře s omáčkou a cibule navrch. Vejce až po pípnutí.',
+  ingredients: [
+    { n: 'rýže (jasmínová nebo kulatozrnná)', a: 300, u: 'g' },
+    { n: 'kuřecí stehna bez kosti', a: 500, u: 'g' },
+    { n: 'větší cibule', a: 1, u: 'ks' },
+    { n: 'voda', a: 280, u: 'ml' },
+    { n: 'bezlepková sójovka (tamari)', a: 4, u: 'tbsp' },
+    { n: 'cukr', a: 1, u: 'tsp' },
+    { n: 'vejce', a: 4, u: 'ks' },
+    { n: 'jarní cibulka (nepovinné)', a: 2, u: 'ks' }
+  ],
+  steps: [
+    { t: 'Rýže', d: 'Propláchni 2–3× studenou vodou, slij.' },
+    { t: 'Omáčka', d: 'Smíchej vodu, sójovku a cukr.' },
+    { t: 'Naložit', d: 'Kuře na kostky 2–3 cm, cibuli na proužky. Kuře vmíchej do omáčky.', s: 600 },
+    { t: 'Navrstvit', d: 'Rýži do misky, zalij omáčkou s kuřetem, navrch cibule. Nemíchej.', key: true },
+    { t: 'Vařit', d: 'Spusť program na rýži. Tvůj rýžovar bývá rychlejší — řiď se pípnutím.', s: 2400 },
+    { t: 'Vejce', d: 'Lehce rozmíchaná vejce nalij navrch, zavři a nech na ohřevu. Pro děti o 5 minut déle.', s: 600 },
+    { t: 'Podávej', d: 'Nabírej po vrstvách, posyp jarní cibulkou.' }
+  ],
+  tips: [
+    'Stehna jsou lepší než prsa, v rýžovaru nevyschnou.',
+    'Nepřekroč rysku maximální náplně.',
+    'Misku hned namoč, připečená rýže pak jde dolů sama.'
+  ],
+  notes: [], version: 2, updated: '2026-10-21', source: 'chat 17. 9. 2026',
+  history: [{ v: 2, date: '2026-10-21', text: 'Sójová omáčka nahrazena bezlepkovou (tamari).' }]
+},
+{
+  id: 'livance', title: 'Bezlepkové lívance', subtitle: 'Nadýchané, z běžné bezlepkové směsi. 4 porce ≈ 16 lívanců.',
+  category: 'Snídaně', time: 30, servings: 4, equipment: ['panev24'], tags: ['snidane', 'sladke', 'rychle'],
+  photo: { src: WM('Pancakes_(Unsplash_CKipn7XSyEU).jpg'), page: WP('Pancakes_(Unsplash_CKipn7XSyEU).jpg') },
+  key: 'Nech těsto 10 minut odpočinout. Bezlepková mouka pomalu nasává tekutinu a lívance pak drží tvar.',
+  ingredients: [
+    { n: 'bezlepková mouka (univerzální směs)', a: 250, u: 'g' },
+    { n: 'vejce', a: 2, u: 'ks' },
+    { n: 'mléko', a: 300, u: 'ml' },
+    { n: 'cukr', a: 1, u: 'tbsp' },
+    { n: 'bezlepkový prášek do pečiva', a: 1, u: 'tsp' },
+    { n: 'sůl', a: 0, u: 'špetka' },
+    { n: 'rozpuštěné máslo', a: 30, u: 'g' },
+    { n: 'olej na pánev', a: 1, u: 'tbsp' }
+  ],
+  steps: [
+    { t: 'Suché', d: 'V míse prošlehej mouku, cukr, prášek do pečiva a sůl.' },
+    { t: 'Mokré', d: 'Přidej vejce, mléko a máslo, vyšlehej hladké hustší těsto.' },
+    { t: 'Odpočinek', d: 'Nech těsto stát. Mezitím rozehřej pánev.', s: 600, key: true },
+    { t: 'První strana', d: 'Pánev potři olejem, po 1 tbsp těsta, 3–4 najednou. Peč, dokud nejsou bublinky.', s: 120 },
+    { t: 'Obrátit', d: 'Obrať a dopeč dozlatova. Opakuj s dalším těstem.', s: 90 },
+    { t: 'Podávej', d: 'S tvarohem a ovocem, marmeládou nebo javorovým sirupem.' }
+  ],
+  tips: [
+    'Po prvním lívanci ztlum na střední stupeň, elektrická plotna drží teplo.',
+    'Obracej, až okraje zmatní, dřív se trhají.',
+    'Hotové na talíř do trouby na 60 °C.',
+    'Mísu hned namoč, těsto zaschne jako beton.'
+  ],
+  notes: [], version: 1, updated: '2026-10-10', source: 'chat 10. 10. 2026', history: []
+},
+{
+  id: 'banana-bread', title: 'Bezlepkový banana bread', subtitle: 'Hranatá forma 30 × 11 cm, 175 °C, v robotu Bosch MUM 5.',
+  category: 'Pečení', time: 100, servings: 12, servingsLabel: 'plátků', equipment: ['robot', 'forma', 'trouba'], tags: ['peceni', 'sladke'],
+  photo: { src: WM('Banana_bread_loaf_on_a_plate.jpg'), page: WP('Banana_bread_loaf_on_a_plate.jpg') },
+  key: 'Po přidání mouky už jen krátce promíchej (stupeň 1, cca 30 s). Přemíchané bezlepkové těsto je hutné.',
+  ingredients: [
+    { n: 'velmi zralé banány (cca 400 g bez slupky)', a: 4, u: 'ks' },
+    { n: 'vejce', a: 3, u: 'ks' },
+    { n: 'změklé máslo nebo Hera', a: 110, u: 'g' },
+    { n: 'cukr', a: 120, u: 'g' },
+    { n: 'vanilkový cukr (sáček)', a: 1, u: 'ks' },
+    { n: 'bezlepková mouka na pečení', a: 250, u: 'g' },
+    { n: 'bezlepkový kypřicí prášek', a: 12, u: 'g' },
+    { n: 'sůl', a: 0, u: 'špetka' },
+    { n: 'mléko', a: 50, u: 'ml' },
+    { n: 'čokoláda nebo ořechy (volitelně)', a: 80, u: 'g' }
+  ],
+  steps: [
+    { t: 'Příprava', d: 'Troubu na 175 °C horní/spodní, formu vylož papírem s přesahem.', s: 600 },
+    { t: 'Banány', d: 'Rozmačkej vidličkou na kaši.' },
+    { t: 'Máslo a cukr', d: 'Míchací metlou šlehej máslo s cukry do světlé pěny.', s: 180, tag: 'stupeň 4' },
+    { t: 'Vejce', d: 'Po jednom, každé nech zapracovat.', tag: 'stupeň 3' },
+    { t: 'Banány a mléko', d: 'Přidej a krátce promíchej.', tag: 'stupeň 2' },
+    { t: 'Mouka', d: 'Mouku s práškem a solí přisyp a míchej jen do spojení. Čokoládu vmíchej stěrkou.', tag: 'stupeň 1', key: true },
+    { t: 'Odpočinek těsta', d: 'Nech těsto stát, mouka nasaje tekutinu.', s: 600 },
+    { t: 'Pečení', d: 'Nalij do formy, peč 55–65 minut. Po 35 minutách přikryj alobalem. Hotovo, když špejle vyjde suchá.', s: 3600 },
+    { t: 'Chladnutí', d: '15 minut ve formě, pak vytáhni za papír na mřížku.', s: 900 }
+  ],
+  tips: [
+    'Banány skoro černé = sladší a vláčnější.',
+    'Krájej až vychladlý, teplý se drolí. Plátky jdou zamrazit.',
+    'Čtvercová forma 20 × 20: špejlí kontroluj už kolem 40. minuty.',
+    'Mísu robota a metlu namoč hned.'
+  ],
+  notes: [], version: 1, updated: '2026-10-10', source: 'chat 10. 10. 2026', history: []
+},
+{
+  id: 'mramorova-babovka', title: 'Mramorová bábovka', subtitle: 'Nadýchaná, v robotu Bosch MUM 5, hranatá forma 30 × 11 cm.',
+  category: 'Pečení', time: 90, servings: 12, servingsLabel: 'plátků', equipment: ['robot', 'forma', 'trouba'], tags: ['peceni', 'sladke'],
+  photo: { src: WM('Marble_B%C3%A1bovka.JPG'), page: WP('Marble_B%C3%A1bovka.JPG') },
+  key: 'Máslo s cukrem šlehej celých 5 minut do světlé pěny — z toho je nadýchanost. V půlce shrň máslo ze stěn.',
+  ingredients: [
+    { n: 'změklé máslo nebo Hera', a: 200, u: 'g' },
+    { n: 'cukr', a: 180, u: 'g' },
+    { n: 'vanilkový cukr (sáček)', a: 1, u: 'ks' },
+    { n: 'vejce (pokojová teplota)', a: 4, u: 'ks' },
+    { n: 'bezlepková mouka na pečení', a: 250, u: 'g' },
+    { n: 'bezlepkový kypřicí prášek', a: 12, u: 'g' },
+    { n: 'mléko', a: 100, u: 'ml' },
+    { n: 'kakao', a: 2, u: 'tbsp' },
+    { n: 'mléko do kakaové části', a: 2, u: 'tbsp' },
+    { n: 'sůl', a: 0, u: 'špetka' }
+  ],
+  steps: [
+    { t: 'Příprava', d: 'Máslo a vejce hodinu předem z lednice (Hera stačí 15–20 min). Trouba 170 °C, forma s papírem.', s: 600 },
+    { t: 'Máslo a cukr — 1. půlka', d: 'Míchací metla, šlehej máslo s cukry.', s: 150, tag: 'stupeň 4', key: true },
+    { t: 'Shrnout', d: 'Zastav a stěrkou shrň máslo ze stěn dolů.' },
+    { t: 'Máslo a cukr — 2. půlka', d: 'Šlehej dál do světlé nadýchané pěny.', s: 150, tag: 'stupeň 4' },
+    { t: 'Vejce', d: 'Po jednom, každé cca 30 s.', tag: 'stupeň 3' },
+    { t: 'Mouka a mléko', d: 'Mouku s práškem a solí střídej s mlékem, jen do spojení (30–40 s). Zbytek dotáhni stěrkou.', tag: 'stupeň 1' },
+    { t: 'Kakaová část', d: 'Třetinu těsta do jiné misky, vmíchej kakao s mlékem lžící.' },
+    { t: 'Mramorování', d: 'Do formy střídej světlé a tmavé těsto, vidličkou jednou provlni.' },
+    { t: 'Pečení', d: 'Peč do suché špejle.', s: 3000 },
+    { t: 'Chladnutí', d: '10 minut ve formě, pak vytáhni za papír.', s: 600 }
+  ],
+  tips: [
+    'Šlehací metla (jemné drátky) je na sníh, na máslo použij míchací.',
+    'Hera 1 : 1 místo másla funguje, přidej víc vanilky nebo citronovou kůru.',
+    'Čtvercová forma 20 × 20: špejle už kolem 40. minuty.',
+    'Mísu a metlu napusť vodou hned po nalití těsta.'
+  ],
+  notes: [], version: 1, updated: '2026-10-10', source: 'chat 10. 10. 2026 (doplněno ze shrnutí)', history: []
+}
+];
+
+</script>
+<script>
+(() => {
+'use strict';
+const R = window.RECIPES, K = window.KITCHEN, PEOPLE = window.PEOPLE;
+const $ = (s, el = document) => el.querySelector(s);
+const $$ = (s, el = document) => [...el.querySelectorAll(s)];
+const app = $('#app');
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const ico = (id, cls = '') => `<svg class="${cls}"><use href="#i-${id}"/></svg>`;
+const byId = id => R.find(r => r.id === id);
+
+/* ---------- storage ---------- */
+const store = {
+  get(k, d) { try { const v = localStorage.getItem('kb.' + k); return v == null ? d : JSON.parse(v); } catch { return d; } },
+  set(k, v) { try { localStorage.setItem('kb.' + k, JSON.stringify(v)); } catch {} }
+};
+const idb = (() => {
+  let dbp;
+  const open = () => dbp || (dbp = new Promise((res, rej) => {
+    try { const r = indexedDB.open('kucharka', 1); r.onupgradeneeded = () => r.result.createObjectStore('photos'); r.onsuccess = () => res(r.result); r.onerror = () => rej(r.error); } catch (e) { rej(e); }
+  }));
+  const tx = (mode, fn) => open().then(db => new Promise((res, rej) => { const t = db.transaction('photos', mode); const s = t.objectStore('photos'); const q = fn(s); t.oncomplete = () => res(q && q.result); t.onerror = () => rej(t.error); }));
+  return { get: k => tx('readonly', s => s.get(k)).catch(() => null), set: (k, v) => tx('readwrite', s => s.put(v, k)).catch(() => null), del: k => tx('readwrite', s => s.delete(k)).catch(() => null) };
+})();
+const photoCache = {};
+
+/* ---------- formatting ---------- */
+const FR = { 0: '', 0.25: '¼', 0.5: '½', 0.75: '¾' };
+function frac(v, step) {
+  let r = Math.round(v / step) * step; if (r < step) r = step;
+  const w = Math.floor(r + 1e-9), f = Math.round((r - w) * 100) / 100;
+  return (w ? w : '') + (FR[f] ?? '') || '¼';
+}
+function fmtQty(ing, ratio) {
+  const v = ing.a * ratio;
+  if (!ing.a) return ing.u || '';
+  switch (ing.u) {
+    case 'g': case 'ml': { const n = Math.max(5, Math.round(v / 5) * 5); return n.toLocaleString('cs-CZ') + ' ' + ing.u; }
+    case 'tbsp': case 'tsp': return frac(v, 0.25) + ' ' + ing.u;
+    case 'ks': return frac(v, 0.5) + ' ks';
+    default: return frac(v, 0.5) + ' ' + ing.u;
+  }
+}
+const mmss = s => { s = Math.max(0, Math.ceil(s)); const h = Math.floor(s / 3600), m = Math.floor(s % 3600 / 60), x = s % 60; return (h ? h + ':' + String(m).padStart(2, '0') : String(m).padStart(2, '0')) + ':' + String(x).padStart(2, '0'); };
+const fmtTime = m => m >= 60 ? (Math.floor(m / 60) + ' h' + (m % 60 ? ' ' + (m % 60) + ' min' : '')) : m + ' min';
+const today = () => new Date().toISOString().slice(0, 10);
+const fmtDate = d => { if (!d) return ''; const p = d.split('-'); return p.length === 3 ? `${+p[2]}. ${+p[1]}. ${p[0]}` : p.length === 2 ? `${+p[1]}/${p[0]}` : d; };
+const servLabel = (r, n) => r.servingsLabel || (n === 1 ? 'porce' : n < 5 ? 'porce' : 'porcí');
+const initials = n => (n || '?').trim().slice(0, 1).toUpperCase();
+
+/* ---------- user ---------- */
+let me = store.get('me', null);
+
+/* ---------- feedback outbox (Netlify Forms) ---------- */
+function send(payload) {
+  const item = Object.assign({ 'form-name': 'zpetna-vazba', kdo: me || 'neznámý', datum: new Date().toISOString() }, payload);
+  const box = store.get('outbox', []); box.push(item); store.set('outbox', box); flush();
+}
+let flushing = false;
+async function flush() {
+  if (flushing || !navigator.onLine) return; flushing = true;
+  let box = store.get('outbox', []);
+  while (box.length) {
+    try {
+      const res = await fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: new URLSearchParams(box[0]).toString() });
+      if (!res.ok) break;
+      box.shift(); store.set('outbox', box);
+    } catch { break; }
+  }
+  flushing = false;
+}
+addEventListener('online', flush);
+
+/* ---------- toast & sheet ---------- */
+let toastT;
+function toast(msg) { const t = $('#toast'); t.textContent = msg; t.classList.add('show'); clearTimeout(toastT); toastT = setTimeout(() => t.classList.remove('show'), 2600); }
+function openSheet(html, onMount) {
+  const s = $('#sheet'), b = $('#sheetBackdrop');
+  s.innerHTML = '<div class="grab"></div>' + html; s.hidden = false; b.hidden = false;
+  b.onclick = closeSheet; onMount && onMount(s);
+}
+function closeSheet() { $('#sheet').hidden = true; $('#sheetBackdrop').hidden = true; }
+
+function askWho(then) {
+  let pick = me;
+  openSheet(`<h2>Kdo vaří?</h2><p class="muted">Komentáře a hodnocení se ukládají pod tvým jménem, ať vím, kdo co napsal.</p>
+    <div class="people">${PEOPLE.map(p => `<button data-p="${esc(p)}" aria-pressed="${p === me}"><span class="avatar">${initials(p)}</span>${esc(p)}</button>`).join('')}
+    <button data-p="__other" aria-pressed="${me && !PEOPLE.includes(me)}"><span class="avatar">+</span>Někdo jiný</button></div>
+    <input class="field ${me && !PEOPLE.includes(me) ? '' : 'hidden'}" id="otherName" placeholder="Tvoje jméno" value="${me && !PEOPLE.includes(me) ? esc(me) : ''}">
+    <button class="btn primary" id="whoOk" style="width:100%;margin-top:14px">Hotovo</button>`, s => {
+    $$('.people button', s).forEach(b => b.onclick = () => {
+      $$('.people button', s).forEach(x => x.setAttribute('aria-pressed', x === b));
+      pick = b.dataset.p; $('#otherName', s).classList.toggle('hidden', pick !== '__other'); if (pick === '__other') $('#otherName', s).focus();
+    });
+    $('#whoOk', s).onclick = () => {
+      const name = pick === '__other' ? $('#otherName', s).value.trim() : pick;
+      if (!name) { toast('Vyber nebo napiš jméno'); return; }
+      me = name; store.set('me', me); closeSheet(); render(); then && then();
+    };
+  });
+}
+
+/* ---------- photos ---------- */
+function photoHTML(r, extra = '') {
+  const own = photoCache[r.id];
+  const src = own || (r.photo && r.photo.src) || '';
+  const hue = [...r.id].reduce((a, c) => a + c.charCodeAt(0), 0) % 360;
+  return `<div class="ph ${extra} ${src ? '' : 'noimg'}" style="background:linear-gradient(135deg,hsl(${hue} 45% 62%),hsl(${(hue + 40) % 360} 50% 45%))">
+    <div class="fallback">${esc(r.title.slice(0, 1))}</div>
+    ${src ? `<img src="${esc(src)}" alt="${esc(r.title)}" loading="lazy" decoding="async" onerror="this.parentNode.classList.add('fail')">` : ''}</div>`;
+}
+async function loadOwnPhotos() {
+  await Promise.all(R.map(async r => { const p = await idb.get(r.id); if (p) photoCache[r.id] = p; }));
+}
+function pickPhoto(r) {
+  const inp = document.createElement('input'); inp.type = 'file'; inp.accept = 'image/*';
+  inp.onchange = async () => {
+    const f = inp.files[0]; if (!f) return;
+    const url = await resize(f, 1400);
+    photoCache[r.id] = url; await idb.set(r.id, url);
+    toast('Fotka uložená v tomhle telefonu'); render();
+  };
+  inp.click();
+}
+function resize(file, max) {
+  return new Promise(res => {
+    const img = new Image(); const u = URL.createObjectURL(file);
+    img.onload = () => { const s = Math.min(1, max / Math.max(img.width, img.height)); const c = document.createElement('canvas'); c.width = img.width * s; c.height = img.height * s; c.getContext('2d').drawImage(img, 0, 0, c.width, c.height); URL.revokeObjectURL(u); res(c.toDataURL('image/jpeg', .85)); };
+    img.src = u;
+  });
+}
+
+/* ---------- per-recipe local state ---------- */
+const st = {
+  servings: id => store.get('serv.' + id, byId(id).servings),
+  setServings: (id, n) => store.set('serv.' + id, n),
+  got: id => store.get('got.' + id, {}),
+  done: id => store.get('done.' + id, {}),
+  comments: id => store.get('com.' + id, []),
+  ratings: id => store.get('rate.' + id, {}),
+  cooked: id => store.get('cooked.' + id, [])
+};
+
+/* ---------- timers ---------- */
+let timers = store.get('timers', []);
+const saveTimers = () => store.set('timers', timers);
+const tKey = (rid, i) => rid + ':' + i;
+function timerLeft(t) { return t.state === 'run' ? (t.endAt - Date.now()) / 1000 : t.left; }
+function toggleTimer(rid, i) {
+  unlockAudio(); askNotify();
+  const r = byId(rid), step = r.steps[i], key = tKey(rid, i);
+  let t = timers.find(x => x.key === key);
+  if (!t || t.state === 'done') {
+    timers = timers.filter(x => x.key !== key);
+    t = { key, rid, i, label: step.t, recipe: r.title, dur: step.s, state: 'run', endAt: Date.now() + step.s * 1000, left: step.s };
+    timers.push(t);
+  } else if (t.state === 'run') { t.left = timerLeft(t); t.state = 'pause'; }
+  else { t.endAt = Date.now() + t.left * 1000; t.state = 'run'; }
+  saveTimers(); syncWake(); tick(true);
+}
+function resetTimer(key) { timers = timers.filter(x => x.key !== key); saveTimers(); tick(true); }
+function finishTimer(t) {
+  t.state = 'done'; t.left = 0; saveTimers();
+  const d = st.done(t.rid); d[t.i] = true; store.set('done.' + t.rid, d);
+  ring(t);
+}
+let ringing = null;
+function ring(t) {
+  ringing = t.key;
+  beep(); try { navigator.vibrate && navigator.vibrate([400, 200, 400, 200, 600]); } catch {}
+  if ('Notification' in window && Notification.permission === 'granted' && document.visibilityState !== 'visible') {
+    try { new Notification('⏰ ' + t.label + ' — hotovo', { body: t.recipe, tag: t.key, requireInteraction: true }); } catch {}
+  }
+  toast('⏰ ' + t.label + ' — hotovo');
+  let n = 0; const rep = setInterval(() => { if (ringing !== t.key || ++n > 5) { clearInterval(rep); return; } beep(); }, 2500);
+  render(true);
+}
+let actx;
+function unlockAudio() { try { actx = actx || new (window.AudioContext || window.webkitAudioContext)(); if (actx.state === 'suspended') actx.resume(); } catch {} }
+function beep() {
+  try {
+    unlockAudio(); const now = actx.currentTime;
+    [0, .28, .56].forEach((d, k) => { const o = actx.createOscillator(), g = actx.createGain(); o.type = 'sine'; o.frequency.value = k === 2 ? 1175 : 880; g.gain.setValueAtTime(0.0001, now + d); g.gain.exponentialRampToValueAtTime(0.5, now + d + .02); g.gain.exponentialRampToValueAtTime(0.0001, now + d + .24); o.connect(g).connect(actx.destination); o.start(now + d); o.stop(now + d + .26); });
+  } catch {}
+}
+let asked = store.get('notifAsked', false);
+function askNotify() { if (asked || !('Notification' in window) || Notification.permission !== 'default') return; asked = true; store.set('notifAsked', true); try { Notification.requestPermission(); } catch {} }
+
+function tick(force) {
+  let changed = false;
+  timers.forEach(t => { if (t.state === 'run' && timerLeft(t) <= 0) { finishTimer(t); changed = true; } });
+  // update all timer buttons
+  $$('[data-tkey]').forEach(el => {
+    const t = timers.find(x => x.key === el.dataset.tkey);
+    const state = t ? t.state : 'idle';
+    const secs = t ? timerLeft(t) : +el.dataset.dur;
+    if (el.dataset.state !== state || force) {
+      el.dataset.state = state;
+      const icon = el.querySelector('use'); if (icon) icon.setAttribute('href', '#i-' + (state === 'run' ? 'pause' : state === 'done' ? 'check' : 'play'));
+    }
+    const lab = el.querySelector('.tl'); if (lab) lab.textContent = state === 'done' ? 'Hotovo' : mmss(secs);
+  });
+  $$('[data-tleft]').forEach(el => { const t = timers.find(x => x.key === el.dataset.tleft); if (t) el.textContent = t.state === 'done' ? 'Hotovo' : mmss(timerLeft(t)); });
+  // pill
+  const active = timers.filter(t => t.state !== 'done' || ringing === t.key);
+  const pill = $('#timerPill'), badge = $('#timerBadge');
+  const inCook = location.hash.startsWith('#/vareni');
+  if (active.length && !location.hash.startsWith('#/casovace') && !inCook) {
+    const t = [...active].sort((a, b) => (a.state === 'done' ? -1 : timerLeft(a)) - (b.state === 'done' ? -1 : timerLeft(b)))[0];
+    pill.hidden = false; pill.classList.toggle('ring', t.state === 'done');
+    pill.innerHTML = `${ico(t.state === 'done' ? 'check' : t.state === 'pause' ? 'pause' : 'timer')}<span>${t.state === 'done' ? 'Hotovo' : mmss(timerLeft(t))} · ${esc(t.label)}</span>${active.length > 1 ? `<b style="opacity:.7">+${active.length - 1}</b>` : ''}`;
+    pill.onclick = () => { ringing = null; location.hash = '#/casovace'; };
+  } else pill.hidden = true;
+  const runN = timers.filter(t => t.state === 'run').length;
+  badge.hidden = !runN; badge.textContent = runN;
+  if (changed && force !== true) render(true);
+}
+setInterval(tick, 500);
+document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') { tick(true); syncWake(); } });
+
+/* ---------- wake lock ---------- */
+let wakeLock = null, wakeWanted = false;
+async function syncWake() {
+  const h = location.hash;
+  wakeWanted = h.startsWith('#/r/') || h.startsWith('#/vareni') || timers.some(t => t.state === 'run');
+  if (!('wakeLock' in navigator)) { updateWakeUI(false); return; }
+  try {
+    if (wakeWanted && !wakeLock && document.visibilityState === 'visible') {
+      wakeLock = await navigator.wakeLock.request('screen');
+      wakeLock.addEventListener('release', () => { wakeLock = null; updateWakeUI(false); });
+    } else if (!wakeWanted && wakeLock) { await wakeLock.release(); wakeLock = null; }
+  } catch { wakeLock = null; }
+  updateWakeUI(!!wakeLock);
+}
+function updateWakeUI(on) { $$('.wake').forEach(w => { w.dataset.on = on; w.lastChild.textContent = on ? 'Displej nezhasne' : ('wakeLock' in navigator ? 'Klepni pro zapnutí displeje' : 'Displej: nastav v telefonu'); }); }
+document.addEventListener('click', () => { if (wakeWanted && !wakeLock) syncWake(); }, { passive: true });
+
+/* ---------- versions: what's new ---------- */
+const seen = store.get('seenVersions', null);
+const isNew = r => seen && !(r.id in seen);
+const isUpdated = r => seen && (r.id in seen) && seen[r.id] < r.version;
+function markSeen() { const m = {}; R.forEach(r => m[r.id] = r.version); store.set('seenVersions', m); }
+
+/* ---------- views ---------- */
+const FILTERS = [
+  ['vse', 'Vše', () => true],
+  ['hit', 'Hity dětí', r => r.kidsLiked || r.tags.includes('hit')],
+  ['rychle', 'Do 30 min', r => r.time <= 30],
+  ['jedno-nadobi', 'Jedno nádobí', r => r.tags.includes('jedno-nadobi')],
+  ['dvakrat', 'Uvař jednou, jez dvakrát', r => r.tags.includes('dvakrat')],
+  ['polevka', 'Polévky', r => r.category === 'Polévka'],
+  ['peceni', 'Pečení a sladké', r => r.category === 'Pečení' || r.category === 'Snídaně'],
+  ['papinak', 'Papiňák', r => r.equipment.includes('papinak')],
+  ['ryzovar', 'Rýžovar', r => r.equipment.includes('ryzovar')],
+  ['trouba', 'Trouba', r => r.equipment.includes('trouba')]
+];
+let filter = store.get('filter', 'vse'), query = '';
+
+function card(r) {
+  const cooked = st.cooked(r.id), rt = st.ratings(r.id);
+  const ups = Object.values(rt).filter(v => v === 1).length;
+  const pills = [];
+  if (isNew(r)) pills.push('<span class="pill new">Nové</span>');
+  else if (isUpdated(r)) pills.push('<span class="pill new">Upraveno</span>');
+  if (r.kidsLiked || r.tags.includes('hit')) pills.push('<span class="pill hot">Hit</span>');
+  return `<a class="card" href="#/r/${r.id}">
+    ${photoHTML(r)}
+    ${pills.length ? `<div class="badge-corner">${pills.join('')}</div>` : ''}
+    <div class="body"><h3>${esc(r.title)}</h3>
+      <div class="meta">${ico('clock')}${fmtTime(r.time)}${cooked.length ? ` · ${cooked.length}× vařeno` : ''}${ups ? ` · ${ups}${ico('thumb')}` : ''}</div>
+    </div></a>`;
+}
+
+function viewHome() {
+  const f = FILTERS.find(x => x[0] === filter) || FILTERS[0];
+  const q = query.trim().toLowerCase();
+  const list = R.filter(f[2]).filter(r => !q || (r.title + ' ' + r.subtitle + ' ' + r.ingredients.map(i => i.n).join(' ')).toLowerCase().includes(q));
+  const recent = [...R].sort((a, b) => (b.updated || '').localeCompare(a.updated || ''))[0];
+  const showFeature = filter === 'vse' && !q;
+  app.innerHTML = `<div class="wrap">
+    <header class="top"><div class="top-row">
+      <div class="brand"><h1>Kuchařka</h1><span class="dot"></span></div>
+      <button class="me-chip" id="meBtn"><span class="avatar">${me ? initials(me) : '?'}</span>${me ? esc(me) : 'Kdo vaří?'}</button>
+    </div><p class="tagline">Všechno bez lepku · ${R.length} receptů</p></header>
+    <label class="search">${ico('search')}<input id="q" type="search" placeholder="Hledej recept nebo surovinu…" value="${esc(query)}" autocomplete="off"></label>
+    <div class="chips" role="toolbar">${FILTERS.map(x => `<button class="chip" data-f="${x[0]}" aria-pressed="${x[0] === filter}">${x[1]}</button>`).join('')}</div>
+    ${showFeature ? `<div class="section-h"><h2>Naposledy přidané</h2></div>
+      <a class="feature" href="#/r/${recent.id}">${photoHTML(recent)}<div class="ov"><small>${esc(recent.category)} · ${fmtTime(recent.time)}</small><h2>${esc(recent.title)}</h2><p>${esc(recent.subtitle)}</p></div></a>` : ''}
+    <div class="section-h"><h2>${q ? 'Výsledky' : f[1] === 'Vše' ? 'Všechny recepty' : f[1]}</h2><span class="muted">${list.length}</span></div>
+    ${list.length ? `<div class="grid">${list.map(card).join('')}</div>` : `<div class="empty">${ico('search')}<p>Nic takového tu zatím není.</p></div>`}
+  </div>`;
+  $('#meBtn').onclick = () => askWho();
+  const qi = $('#q');
+  qi.oninput = () => { query = qi.value; const pos = qi.selectionStart; viewHome(); const n = $('#q'); n.focus(); n.setSelectionRange(pos, pos); };
+  $$('.chip').forEach(c => c.onclick = () => { filter = c.dataset.f; store.set('filter', filter); viewHome(); });
+}
+
+function ingsHTML(r, ratio, got) {
+  return `<ul class="ings">${r.ingredients.map((g, i) => `<li data-i="${i}" class="${got[i] ? 'got' : ''}"><span class="tick">${ico('check')}</span><span class="q">${esc(fmtQty(g, ratio))}</span><span class="n">${esc(g.n)}</span></li>`).join('')}</ul>`;
+}
+function timerBtn(r, i, cls = 'tbtn') {
+  const s = r.steps[i]; if (!s.s) return '';
+  return `<button class="${cls}" data-tkey="${tKey(r.id, i)}" data-dur="${s.s}" data-state="idle">${ico('play')}<span class="tl">${mmss(s.s)}</span></button>`;
+}
+
+function viewRecipe(id) {
+  const r = byId(id); if (!r) return go('#/');
+  const n = st.servings(id), ratio = n / r.servings, got = st.got(id), done = st.done(id);
+  const comments = st.comments(id), rt = st.ratings(id), cooked = st.cooked(id);
+  const equip = r.equipment.map(e => K.items.find(k => k.id === e)).filter(Boolean);
+  const allNotes = [
+    ...(r.notes || []).map(x => ({ ...x, kind: 'claude', synced: true })),
+    ...comments
+  ];
+  const inShop = store.get('shop', []).some(s => s.id === id);
+  app.innerHTML = `<div class="wrap">
+    <div class="hero">${photoHTML(r)}<div class="shade"></div>
+      <div class="hero-bar"><a class="round" href="#/" aria-label="Zpět">${ico('back')}</a>
+        <button class="round" id="photoBtn" aria-label="Vlastní fotka">${ico('camera')}</button></div>
+      ${photoCache[id] ? '<div class="credit">Tvoje fotka</div>' : r.photo && r.photo.page ? `<div class="credit">Ilustrační foto: <a href="${esc(r.photo.page)}" target="_blank" rel="noopener">Wikimedia Commons</a></div>` : ''}
+    </div>
+    <div class="d-head"><div class="cat">${esc(r.category)}${r.kidsLiked ? ' · hit u dětí' : ''}</div>
+      <h1>${esc(r.title)}</h1><p>${esc(r.subtitle)}</p>
+      <div class="facts"><span class="fact">${ico('clock')}${fmtTime(r.time)}</span><span class="fact">${ico('users')}${r.servings} ${servLabel(r, r.servings)}</span>
+        ${equip.map(e => `<a class="fact" href="#/kuchyne">${ico('pot')}${esc(e.name)}</a>`).join('')}</div>
+      <button class="wake" data-on="false"><i></i><span>Displej nezhasne</span></button>
+    </div>
+    <div class="actions">
+      <a class="btn primary" href="#/vareni/${id}">${ico('chef')}Začít vařit</a>
+      <button class="btn icon" id="shopBtn" aria-label="Do nákupu" style="${inShop ? 'color:var(--olive)' : ''}">${ico(inShop ? 'check' : 'cart')}</button>
+      <button class="btn icon" id="cookedBtn" aria-label="Uvařeno">${ico('spark')}</button>
+    </div>
+    ${r.key ? `<div class="keybox">${ico('spark')}<div><b>Na tomhle to stojí</b><p>${esc(r.key)}</p></div></div>` : ''}
+
+    <section class="panel"><div class="panel-h"><h2>Suroviny</h2>
+      <div class="stepper"><button id="sm" aria-label="Méně">${ico('minus')}</button><div class="val">${n}<small>${servLabel(r, n)}</small></div><button id="sp" aria-label="Více">${ico('plus')}</button></div></div>
+      ${ingsHTML(r, ratio, got)}
+      ${n !== r.servings ? `<p class="small muted" style="margin:8px 0 0">Přepočteno z ${r.servings} ${servLabel(r, r.servings)}. <button id="sreset" style="color:var(--accent);font-weight:700">Vrátit</button></p>` : ''}
+    </section>
+
+    <section class="panel"><div class="panel-h"><h2>Postup</h2>${Object.keys(done).length ? '<button class="small" id="dreset" style="color:var(--accent);font-weight:700">Začít znovu</button>' : ''}</div>
+      <ol class="steps">${r.steps.map((s, i) => `<li class="step ${done[i] ? 'done' : ''}" data-i="${i}"><span class="num">${i + 1}</span><div class="tx">
+        <div class="tt">${esc(s.t)}${s.key ? '<span class="k">klíčové</span>' : ''}${s.tag ? `<span class="tg">${esc(s.tag)}</span>` : ''}</div><p>${esc(s.d)}</p>${timerBtn(r, i)}</div></li>`).join('')}</ol>
+    </section>
+
+    ${r.tips && r.tips.length ? `<section class="panel"><div class="panel-h"><h2>Tipy</h2></div><ul class="tips">${r.tips.map(t => `<li>${esc(t)}</li>`).join('')}</ul></section>` : ''}
+
+    <section class="panel"><div class="panel-h"><h2>Jak to chutnalo?</h2><span class="small muted">${cooked.length ? `Vařeno ${cooked.length}× · naposledy ${fmtDate(cooked[cooked.length - 1])}` : 'Zatím nevařeno'}</span></div>
+      <div class="rate">${PEOPLE.map(p => `<div class="person"><b>${esc(p)}</b><div class="row">
+        <button class="up" data-p="${esc(p)}" data-v="1" aria-pressed="${rt[p] === 1}" aria-label="${esc(p)}: chutnalo">${ico('thumb')}</button>
+        <button class="down" data-p="${esc(p)}" data-v="-1" aria-pressed="${rt[p] === -1}" aria-label="${esc(p)}: nechutnalo">${ico('thumb')}</button></div></div>`).join('')}</div>
+    </section>
+
+    <section class="panel" id="notes"><div class="panel-h"><h2>Poznámky</h2><span class="small muted">čte je i Claude</span></div>
+      ${allNotes.length ? allNotes.map(c => `<div class="note"><span class="avatar">${initials(c.who)}</span><div><span class="who">${esc(c.who)}</span><span class="kind ${c.kind}">${{ problem: 'problém', uprava: 'návrh úpravy', poznamka: 'poznámka', claude: 'zapracováno' }[c.kind] || ''}</span><span class="when">${fmtDate(c.date)}</span><p>${esc(c.text)}</p></div></div>`).join('') : '<p class="muted small" style="margin:0">Až budeš vařit, napiš sem, co se povedlo a co ne — příště podle toho recept upravím.</p>'}
+      <div class="compose"><div class="seg" id="kindSeg">
+        <button data-k="poznamka" aria-pressed="true">Poznámka</button><button data-k="problem" aria-pressed="false">Problém</button><button data-k="uprava" aria-pressed="false">Návrh úpravy</button></div>
+        <textarea id="noteTxt" placeholder="Např. rýže byla moc měkká, příště o 2 minuty kratší…"></textarea>
+        <div class="foot"><span class="small muted">${me ? 'Jako ' + esc(me) : 'Nejdřív vyber, kdo jsi'}</span><button class="btn sm primary" id="noteSend">Uložit</button></div>
+      </div>
+    </section>
+
+    <section class="panel"><div class="panel-h"><h2>Historie receptu</h2><span class="small muted">verze ${r.version}</span></div>
+      <ul class="hist">${(r.history || []).slice().reverse().map(h => `<li><b>v${h.v} · ${fmtDate(h.date)}</b> — ${esc(h.text)}</li>`).join('')}<li><b>v1</b> — z ${esc(r.source || 'chatu')}</li></ul>
+    </section>
+  </div>`;
+
+  $('#photoBtn').onclick = () => {
+    if (photoCache[id]) openSheet(`<h2>Fotka receptu</h2><p class="muted">Vlastní fotka je uložená jen v tomhle telefonu.</p>
+      <button class="btn primary" id="pNew" style="width:100%;margin-top:10px">${ico('camera')}Vyfotit / vybrat jinou</button>
+      <button class="btn" id="pDel" style="width:100%;margin-top:8px">Vrátit ilustrační foto</button>`, s => {
+      $('#pNew', s).onclick = () => { closeSheet(); pickPhoto(r); };
+      $('#pDel', s).onclick = async () => { delete photoCache[id]; await idb.del(id); closeSheet(); render(); };
+    }); else pickPhoto(r);
+  };
+  $('#sm').onclick = () => { if (n > 1) { st.setServings(id, n - 1); render(true); } };
+  $('#sp').onclick = () => { if (n < 40) { st.setServings(id, n + 1); render(true); } };
+  const sr = $('#sreset'); if (sr) sr.onclick = () => { st.setServings(id, r.servings); render(true); };
+  const dr = $('#dreset'); if (dr) dr.onclick = () => { store.set('done.' + id, {}); store.set('got.' + id, {}); timers.filter(t => t.rid === id).forEach(t => resetTimer(t.key)); render(true); };
+  $$('.ings li').forEach(li => li.onclick = () => { const g = st.got(id); g[li.dataset.i] = !g[li.dataset.i]; store.set('got.' + id, g); li.classList.toggle('got'); });
+  $$('.step .num').forEach(nm => nm.onclick = () => { const li = nm.closest('.step'); const d = st.done(id); d[li.dataset.i] = !d[li.dataset.i]; store.set('done.' + id, d); li.classList.toggle('done'); });
+  $$('.tbtn').forEach(b => b.onclick = () => { const i = +b.dataset.tkey.split(':')[1]; toggleTimer(id, i); });
+  $$('.tbtn').forEach(b => { let pt; b.onpointerdown = () => { pt = setTimeout(() => { resetTimer(b.dataset.tkey); toast('Časovač vynulován'); }, 700); }; b.onpointerup = b.onpointerleave = () => clearTimeout(pt); });
+  $('#shopBtn').onclick = () => {
+    let s = store.get('shop', []);
+    if (s.some(x => x.id === id)) { s = s.filter(x => x.id !== id); toast('Odebráno z nákupu'); }
+    else { s.push({ id, servings: n }); toast(`Přidáno do nákupu (${n} ${servLabel(r, n)})`); }
+    store.set('shop', s); render(true);
+  };
+  $('#cookedBtn').onclick = () => cookedFlow(r);
+  $$('.rate button').forEach(b => b.onclick = () => {
+    const p = b.dataset.p, v = +b.dataset.v, cur = st.ratings(id);
+    cur[p] = cur[p] === v ? 0 : v; store.set('rate.' + id, cur);
+    send({ typ: 'hodnoceni', recept: id, nazev: r.title, hodnoceni: `${p}: ${cur[p] === 1 ? 'chutnalo' : cur[p] === -1 ? 'nechutnalo' : 'zrušeno'}`, verze: r.version });
+    render(true);
+  });
+  let kind = 'poznamka';
+  $$('#kindSeg button').forEach(b => b.onclick = () => { kind = b.dataset.k; $$('#kindSeg button').forEach(x => x.setAttribute('aria-pressed', x === b)); });
+  $('#noteSend').onclick = () => {
+    const txt = $('#noteTxt').value.trim(); if (!txt) { toast('Napiš poznámku'); return; }
+    const doSave = () => {
+      const c = st.comments(id); c.push({ who: me, kind, text: txt, date: today() }); store.set('com.' + id, c);
+      send({ typ: kind, recept: id, nazev: r.title, text: txt, verze: r.version, porce: st.servings(id) });
+      toast('Uloženo — příště to zapracuju'); render(true);
+    };
+    if (!me) askWho(doSave); else doSave();
+  };
+  $('.wake').onclick = () => syncWake();
+}
+
+function cookedFlow(r) {
+  openSheet(`<h2>Uvařeno! ${ico('spark')}</h2><p class="muted">Jak to dopadlo? Krátká poznámka mi pomůže recept příště vylepšit.</p>
+    <div class="seg" style="margin-top:12px" id="cf">${['Povedlo se', 'Šlo to', 'Něco nesedělo'].map((x, k) => `<button data-v="${x}" aria-pressed="${k === 0}">${x}</button>`).join('')}</div>
+    <div class="compose" style="margin-top:4px"><textarea id="cfTxt" placeholder="Co bys příště udělal jinak? (nepovinné)"></textarea></div>
+    <button class="btn primary" id="cfOk" style="width:100%;margin-top:12px">Uložit</button>`, s => {
+    let v = 'Povedlo se';
+    $$('#cf button', s).forEach(b => b.onclick = () => { v = b.dataset.v; $$('#cf button', s).forEach(x => x.setAttribute('aria-pressed', x === b)); });
+    $('#cfOk', s).onclick = () => {
+      const fin = () => {
+        const c = st.cooked(r.id); c.push(today()); store.set('cooked.' + r.id, c);
+        const txt = $('#cfTxt', s).value.trim();
+        if (txt) { const cm = st.comments(r.id); cm.push({ who: me, kind: v === 'Něco nesedělo' ? 'problem' : 'poznamka', text: v + ': ' + txt, date: today() }); store.set('com.' + r.id, cm); }
+        send({ typ: 'uvareno', recept: r.id, nazev: r.title, hodnoceni: v, text: txt, verze: r.version, porce: st.servings(r.id) });
+        store.set('done.' + r.id, {}); store.set('got.' + r.id, {});
+        closeSheet(); toast('Zapsáno. Díky!'); render(true);
+      };
+      if (!me) { closeSheet(); askWho(fin); } else fin();
+    };
+  });
+}
+
+/* ---------- cooking mode ---------- */
+let cookIdx = 0, cookFor = null;
+function viewCook(id) {
+  const r = byId(id); if (!r) return go('#/');
+  if (cookFor !== id) { cookFor = id; const d = st.done(id); cookIdx = r.steps.findIndex((_, i) => !d[i]); if (cookIdx < 0) cookIdx = 0; }
+  const s = r.steps[cookIdx], d = st.done(id), last = cookIdx === r.steps.length - 1;
+  const n = st.servings(id), ratio = n / r.servings;
+  app.innerHTML = `<div class="cook">
+    <div class="cook-top"><a class="round" href="#/r/${id}" aria-label="Zavřít">${ico('close')}</a>
+      <div class="ttl"><b>${esc(r.title)}</b><button class="wake" data-on="false"><i></i><span>Displej nezhasne</span></button></div>
+      <button class="round" id="ingT" aria-label="Suroviny">${ico('list')}</button></div>
+    <div class="progress">${r.steps.map((_, i) => `<i class="${i === cookIdx ? 'on' : d[i] ? 'dn' : ''}"></i>`).join('')}</div>
+    <div class="cook-body" id="cb">
+      <div class="no">Krok ${cookIdx + 1} z ${r.steps.length}</div>
+      <h2>${esc(s.t)}${s.tag ? ` <span class="tg" style="font-family:var(--sans);font-size:14px;vertical-align:6px;background:var(--olive-soft);color:var(--olive);padding:3px 9px;border-radius:7px">${esc(s.tag)}</span>` : ''}</h2>
+      <div class="txt">${esc(s.d)}</div>
+      ${s.key && r.key ? `<div class="keybox k">${ico('spark')}<div><b>Pozor</b><p>${esc(r.key)}</p></div></div>` : ''}
+      ${s.s ? timerBtn(r, cookIdx, 'big-timer') : ''}
+      <div class="cook-ings ${store.get('cookIngs', false) ? '' : 'hidden'}" id="ci">${ingsHTML(r, ratio, st.got(id))}</div>
+    </div>
+    <div class="cook-foot">
+      <button class="btn icon" id="prev" ${cookIdx === 0 ? 'disabled style="opacity:.4"' : ''} aria-label="Předchozí">${ico('left')}</button>
+      <button class="btn primary" id="next">${last ? ico('check') + 'Hotovo' : 'Další krok' + ico('right')}</button>
+    </div></div>`;
+  const nextStep = () => { const dd = st.done(id); dd[cookIdx] = true; store.set('done.' + id, dd); if (last) { go('#/r/' + id); setTimeout(() => cookedFlow(r), 50); } else { cookIdx++; viewCook(id); } };
+  const prevStep = () => { if (cookIdx > 0) { cookIdx--; viewCook(id); } };
+  $('#next').onclick = nextStep; $('#prev').onclick = prevStep;
+  $('#ingT').onclick = () => { const v = !store.get('cookIngs', false); store.set('cookIngs', v); $('#ci').classList.toggle('hidden', !v); };
+  $$('#ci li').forEach(li => li.onclick = () => { const g = st.got(id); g[li.dataset.i] = !g[li.dataset.i]; store.set('got.' + id, g); li.classList.toggle('got'); });
+  const bt = $('.big-timer'); if (bt) bt.onclick = () => toggleTimer(id, cookIdx);
+  $('.wake').onclick = () => syncWake();
+  let x0 = null, y0 = null; const cb = $('#cb');
+  cb.addEventListener('touchstart', e => { x0 = e.touches[0].clientX; y0 = e.touches[0].clientY; }, { passive: true });
+  cb.addEventListener('touchend', e => { if (x0 == null) return; const dx = e.changedTouches[0].clientX - x0, dy = e.changedTouches[0].clientY - y0; if (Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy) * 1.5) { dx < 0 ? (last ? null : nextStep()) : prevStep(); } x0 = null; }, { passive: true });
+}
+
+/* ---------- shopping ---------- */
+function viewShop() {
+  const sel = store.get('shop', []).filter(s => byId(s.id));
+  const checked = store.get('shopChecked', {});
+  const merged = {};
+  sel.forEach(s => {
+    const r = byId(s.id), ratio = s.servings / r.servings;
+    r.ingredients.forEach(g => {
+      const name = g.n.replace(/\s*\(.*?\)\s*/g, ' ').replace(/,.*$/, '').trim().toLowerCase();
+      const key = name + '|' + g.u;
+      merged[key] = merged[key] || { n: name, u: g.u, a: 0, from: new Set() };
+      merged[key].a += g.a * ratio; merged[key].from.add(r.title);
+    });
+  });
+  const items = Object.entries(merged).sort((a, b) => a[1].n.localeCompare(b[1].n, 'cs'));
+  const line = it => it.a ? fmtQty({ a: it.a, u: it.u }, 1) : it.u;
+  app.innerHTML = `<div class="wrap"><header class="page-h"><h1>Nákup</h1><p>Vyber recepty tlačítkem ${ico('cart', 'small')} u receptu — suroviny se sečtou.</p></header>
+    ${sel.length ? `<div class="shop-recipes">${sel.map(s => { const r = byId(s.id); return `<div class="shop-r">${photoHTML(r)}<div class="nm">${esc(r.title)}<small>${s.servings} ${servLabel(r, s.servings)}</small></div>
+      <div class="stepper"><button data-a="-" data-id="${s.id}" aria-label="Méně">${ico('minus')}</button><button data-a="+" data-id="${s.id}" aria-label="Více">${ico('plus')}</button></div>
+      <button class="btn icon sm" data-del="${s.id}" aria-label="Odebrat" style="width:40px">${ico('trash')}</button></div>`; }).join('')}</div>
+    <section class="panel"><div class="panel-h"><h2>Seznam</h2><button class="btn sm" id="copy">${ico('copy')}Kopírovat</button></div>
+      <ul class="ings">${items.map(([k, it]) => `<li data-k="${esc(k)}" class="${checked[k] ? 'got' : ''}"><span class="tick">${ico('check')}</span><span class="q">${esc(line(it))}</span><span class="n">${esc(it.n)}${it.from.size > 1 ? `<br><small class="muted">${[...it.from].map(esc).join(', ')}</small>` : ''}</span></li>`).join('')}</ul>
+    </section>
+    <div class="callout">Sůl, olej a koření máš nejspíš doma — odškrtni, co nepotřebuješ, a zbytek zkopíruj do Košíku nebo do zpráv.</div>
+    <button class="btn" id="clr" style="width:100%">${ico('trash')}Vyčistit nákup</button>`
+    : `<div class="empty">${ico('cart')}<p>Zatím prázdné.<br>Otevři recept a klepni na košík.</p></div>`}</div>`;
+  $$('[data-a]').forEach(b => b.onclick = () => { const s = store.get('shop', []); const x = s.find(y => y.id === b.dataset.id); x.servings = Math.max(1, x.servings + (b.dataset.a === '+' ? 1 : -1)); store.set('shop', s); viewShop(); });
+  $$('[data-del]').forEach(b => b.onclick = () => { store.set('shop', store.get('shop', []).filter(y => y.id !== b.dataset.del)); viewShop(); updateShopBadge(); });
+  $$('.ings li').forEach(li => li.onclick = () => { const c = store.get('shopChecked', {}); c[li.dataset.k] = !c[li.dataset.k]; store.set('shopChecked', c); li.classList.toggle('got'); });
+  const cp = $('#copy'); if (cp) cp.onclick = async () => {
+    const c = store.get('shopChecked', {});
+    const txt = 'Nákup (bez lepku):\n' + items.filter(([k]) => !c[k]).map(([, it]) => '☐ ' + it.n + (it.a ? ' — ' + line(it) : '')).join('\n');
+    try { await navigator.clipboard.writeText(txt); toast('Zkopírováno'); } catch { openSheet(`<h2>Seznam</h2><textarea class="field" style="height:50vh;padding:12px">${esc(txt)}</textarea>`); }
+  };
+  const cl = $('#clr'); if (cl) cl.onclick = () => { store.set('shop', []); store.set('shopChecked', {}); viewShop(); updateShopBadge(); };
+}
+function updateShopBadge() { const n = store.get('shop', []).length; const b = $('#shopBadge'); b.hidden = !n; b.textContent = n; }
+
+/* ---------- kitchen ---------- */
+function viewKitchen() {
+  const groups = [...new Set(K.items.map(i => i.group))];
+  app.innerHTML = `<div class="wrap"><header class="page-h"><h1>Moje kuchyně</h1><p>${esc(K.intro)}</p></header>
+    ${groups.map(g => `<div class="kgroup"><h2>${esc(g)}</h2>${K.items.filter(i => i.group === g).map(i => {
+      const uses = R.filter(r => r.equipment.includes(i.id));
+      return `<div class="kitem"><b>${esc(i.name)}</b>${i.note ? `<p>${esc(i.note)}</p>` : ''}${uses.length ? `<div class="uses">${uses.map(r => `<a href="#/r/${r.id}">${esc(r.title)}</a>`).join('')}</div>` : ''}</div>`;
+    }).join('')}</div>`).join('')}
+    <div class="callout">Něco chybí, nebo se spotřebič chová jinak (třeba rýžovar je hotový za 25 minut)? Napiš to do poznámky u receptu nebo mi to řekni v chatu — doplním to sem i do receptů.</div>
+    <section class="panel"><div class="panel-h"><h2>Nastavení</h2></div>
+      <p class="small muted" style="margin:0 0 10px">Vaříš jako: <b>${me ? esc(me) : 'nevybráno'}</b> · verze appky ${esc(window.APP_VERSION)}</p>
+      <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn sm" id="who">Změnit jméno</button><button class="btn sm" id="theme">${ico('sun')}Motiv: ${{ auto: 'podle telefonu', light: 'světlý', dark: 'tmavý' }[store.get('theme', 'auto')]}</button><button class="btn sm" id="notif">Upozornění časovačů</button></div>
+    </section></div>`;
+  $('#who').onclick = () => askWho();
+  $('#theme').onclick = () => { const order = ['auto', 'light', 'dark']; const t = order[(order.indexOf(store.get('theme', 'auto')) + 1) % 3]; store.set('theme', t); applyTheme(); viewKitchen(); };
+  $('#notif').onclick = async () => { if (!('Notification' in window)) { toast('Tenhle prohlížeč upozornění neumí'); return; } const p = await Notification.requestPermission(); toast(p === 'granted' ? 'Upozornění zapnutá' : 'Upozornění nejsou povolená'); };
+}
+function applyTheme() { const t = store.get('theme', 'auto'); if (t === 'auto') document.documentElement.removeAttribute('data-theme'); else document.documentElement.dataset.theme = t; }
+
+/* ---------- timers page ---------- */
+function viewTimers() {
+  ringing = null;
+  const list = [...timers].sort((a, b) => timerLeft(a) - timerLeft(b));
+  app.innerHTML = `<div class="wrap"><header class="page-h"><h1>Časovače</h1><p>Běží dál, i když appku zavřeš. Po návratu uvidíš správný zbývající čas.</p></header>
+    ${list.length ? list.map(t => `<div class="trow ${t.state === 'done' ? 'done' : ''}"><div class="tm" data-tleft="${t.key}">${t.state === 'done' ? 'Hotovo' : mmss(timerLeft(t))}</div>
+      <a class="lb" href="#/r/${t.rid}"><b>${esc(t.label)}</b><small>${esc(t.recipe)}</small></a>
+      ${t.state !== 'done' ? `<button class="tbtn" data-tkey="${t.key}" data-dur="${t.dur}" data-state="${t.state}" style="margin:0">${ico(t.state === 'run' ? 'pause' : 'play')}<span class="tl" style="display:none"></span></button>` : ''}
+      <button class="btn icon sm" data-rm="${t.key}" aria-label="Smazat" style="width:40px">${ico('close')}</button></div>`).join('')
+    : `<div class="empty">${ico('timer')}<p>Žádný časovač neběží.<br>Spustíš ho u kroku receptu.</p></div>`}
+    <div class="callout"><b>Když zamkneš telefon:</b> čas se počítá dál podle hodin. Zvuk a vibrace ale spolehlivě zazní, jen když je appka otevřená — proto během vaření displej nezhasíná. Na Androidu si povol upozornění, pak přijde i notifikace.</div></div>`;
+  $$('.tbtn').forEach(b => b.onclick = () => { const [rid, i] = b.dataset.tkey.split(':'); toggleTimer(rid, +i); viewTimers(); });
+  $$('[data-rm]').forEach(b => b.onclick = () => { resetTimer(b.dataset.rm); viewTimers(); });
+}
+
+/* ---------- router ---------- */
+function go(h) { if (location.hash !== h) location.hash = h; else render(); }
+let lastHash = null;
+function render(keepScroll) {
+  const h = location.hash || '#/';
+  const y = scrollY;
+  if (h.startsWith('#/r/')) viewRecipe(h.slice(4));
+  else if (h.startsWith('#/vareni/')) viewCook(h.slice(9));
+  else if (h === '#/nakup') viewShop();
+  else if (h === '#/kuchyne') viewKitchen();
+  else if (h === '#/casovace') viewTimers();
+  else viewHome();
+  const tab = h.startsWith('#/nakup') ? 'nakup' : h.startsWith('#/kuchyne') ? 'kuchyne' : h.startsWith('#/casovace') ? 'casovace' : 'recepty';
+  $$('.tabbar a').forEach(a => a.classList.toggle('on', a.dataset.tab === tab));
+  $('#tabbar').hidden = h.startsWith('#/vareni');
+  if (keepScroll === true && lastHash === h) scrollTo(0, y); else if (lastHash !== h) scrollTo(0, 0);
+  if (!h.startsWith('#/vareni')) cookFor = null;
+  lastHash = h;
+  updateShopBadge(); tick(true); syncWake();
+}
+addEventListener('hashchange', () => render());
+
+/* ---------- boot ---------- */
+applyTheme();
+loadOwnPhotos().then(() => {
+  render();
+  const newOnes = seen ? R.filter(r => isNew(r) || isUpdated(r)) : [];
+  if (newOnes.length) toast(newOnes.length === 1 ? `Nové v kuchařce: ${newOnes[0].title}` : `${newOnes.length} nových nebo upravených receptů`);
+  if (!seen) markSeen(); else setTimeout(markSeen, 4000);
+  flush();
+});
+})();
+
+</script>
+</body>
+</html>
