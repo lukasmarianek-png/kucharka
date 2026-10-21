@@ -5,7 +5,7 @@
 const WM = f => 'https://commons.wikimedia.org/wiki/Special:FilePath/' + f + '?width=900';
 const WP = f => 'https://commons.wikimedia.org/wiki/File:' + f;
 
-window.APP_VERSION = '2026-10-21.3';
+window.APP_VERSION = '2026-10-21.4';
 
 window.KITCHEN = {
   intro: 'Plně vybavená kuchyně. Recepty píšu přímo na tohle vybavení — když něco přibude nebo se něco chová jinak, napiš mi to a doplním.',
@@ -569,5 +569,443 @@ window.RECIPES = [
     'Mísu a metlu napusť vodou hned po nalití těsta.'
   ],
   notes: [], version: 1, updated: '2026-10-10', source: 'chat 10. 10. 2026 (doplněno ze shrnutí)', history: []
+}
+,
+{
+  id: 'tortilla-espanola', title: 'Tortilla española z mikrovlnky', subtitle: 'Bramborová tortilla na celou pánev 24 cm, brambory předvařené v mikrovlnce.',
+  category: 'Hlavní jídlo', time: 30, servings: 4, equipment: ['panev24', 'mikrovlnka'], tags: ['rychle', 'jedno-nadobi'],
+  photo: { src: WM('Tortilla_Espa%C3%B1ola.jpg'), page: WP('Tortilla_Espa%C3%B1ola.jpg') },
+  key: 'Brambory z mikrovlnky jsou skoro hotové, stačí je s cibulí jen orestovat dozlatova. Žádné dlouhé dušení v oleji.',
+  ingredients: [
+    { n: 'brambory (uvařené v mikrovlnce)', a: 600, u: 'g' },
+    { n: 'velká vejce', a: 5, u: 'ks' },
+    { n: 'menší cibule', a: 1, u: 'ks' },
+    { n: 'olej na smažení', a: 4, u: 'tbsp' },
+    { n: 'sůl', a: 1, u: 'tsp' }
+  ],
+  steps: [
+    { t: 'Brambory', d: 'Nakrájej na plátky asi 0,5 cm nebo na kostičky. Opatrně, z mikrovlnky se snáz rozpadají.' },
+    { t: 'Orestovat', d: 'Na pánvi 24 cm rozehřej olej na střední stupeň, orestuj cibuli doměkka, přidej brambory a opatrně restuj, až lehce zezlátnou.', s: 360, key: true },
+    { t: 'Vejce', d: 'V míse rozšlehej vejce se solí, vmíchej brambory s cibulí a nech pár minut nasáknout.', s: 300 },
+    { t: 'První strana', d: 'Do pánve trochu oleje, nalij směs a na mírném stupni smaž, dokud okraje nezpevní.', s: 240 },
+    { t: 'Obrátit', d: 'Přiklop pánev velkým plochým talířem, rychle otoč a tortillu sklouzni zpět nesmaženou stranou dolů.' },
+    { t: 'Druhá strana', d: 'Dosmaž na mírném stupni, střed má zůstat jemně šťavnatý, ne tekutý.', s: 180 },
+    { t: 'Odpočinek', d: 'Sundej z pánve, nech chvíli ustálit a krájej na klíny.', s: 180 }
+  ],
+  tips: [
+    'Talíř na obracení o něco větší než pánev.',
+    'Pánev hned po vyklopení namoč do vody.',
+    'Chutná i vlažná nebo studená druhý den.'
+  ],
+  notes: [], version: 1, updated: '2026-08-26', source: 'chat 26. 8. 2026', history: []
+},
+{
+  id: 'kfc-palicky', title: 'Domácí „KFC“ paličky z trouby', subtitle: 'Křupavé obalované paličky bez smažení. 750 g = 3 porce.',
+  category: 'Hlavní jídlo', time: 90, servings: 3, equipment: ['trouba', 'plech'], tags: ['hit', 'kure', 'trouba'],
+  kidsLiked: true,
+  photo: { src: WM('Crispy_Fried_Chicken_Drumsticks_Leg_Piece.jpg'), page: WP('Crispy_Fried_Chicken_Drumsticks_Leg_Piece.jpg') },
+  key: 'Před obalením nech paličky okapat nad miskou. Moc marinády je důvod, proč obal měkne a opadává.',
+  ingredients: [
+    { n: 'kuřecí paličky', a: 750, u: 'g' },
+    { n: 'kefír nebo bílý jogurt', a: 150, u: 'ml' },
+    { n: 'plnotučná hořčice (bezlepková)', a: 1, u: 'tbsp' },
+    { n: 'vejce', a: 1, u: 'ks' },
+    { n: 'bezlepková strouhanka nebo drcené kukuřičné lupínky', a: 120, u: 'g' },
+    { n: 'bramborový škrob', a: 3, u: 'tbsp' },
+    { n: 'mletá sladká paprika', a: 2, u: 'tsp' },
+    { n: 'sušený česnek', a: 1, u: 'tsp' },
+    { n: 'sušený tymián nebo majoránka', a: 1, u: 'tsp' },
+    { n: 'sůl', a: 1.5, u: 'tsp' },
+    { n: 'mletý pepř', a: 0.5, u: 'tsp' },
+    { n: 'olej na pokapání', a: 3, u: 'tbsp' }
+  ],
+  steps: [
+    { t: 'Marináda', d: 'Rozmíchej kefír, hořčici a vejce, vlož paličky a nech stát (klidně půl dne v lednici).', s: 1800 },
+    { t: 'Trouba', d: '200 °C (horkovzduch 185 °C). Plech s pečicím papírem, ideálně mřížka na plechu.', s: 900 },
+    { t: 'Obalovací směs', d: 'Na velkém talíři smíchej strouhanku, škrob, koření, sůl a pepř.' },
+    { t: 'Obalit', d: 'Paličky nech okapat, pak je přitlač do směsi ze všech stran. Na plech tak, aby se nedotýkaly. Mokrá ruka, suchá ruka.', key: true },
+    { t: 'Pokapat olejem', d: 'Rovnoměrně pokapej olejem. Bez něj zůstane obal bílý a moučný.' },
+    { t: 'První pečení', d: 'Peč a nehýbej s nimi.', s: 1500 },
+    { t: 'Obrátit a dopéct', d: 'Otoč, spodní stranu jen lehce potři olejem. Mražené hranolky můžeš přidat teď. Když je obal měkký, zvyš na 220 °C a posledních 5 minut gril.', s: 1200 },
+    { t: 'Odpočinek', d: 'Nech 5 minut stát, obal se ustálí.', s: 300 }
+  ],
+  tips: [
+    'Opadané kousky nepřimáčkávej zpět, strhneš další.',
+    'Drcené neslazené kukuřičné lupínky drží líp a zůstanou křupavé i vychladlé (hlídej, ať jsou bezlepkové).',
+    'Dip: zakysaná smetana s pažitkou, nebo kečup.',
+    'Studené druhý den do krabičky.'
+  ],
+  notes: [{ who: 'Lukáš', date: '2026-09', text: 'Po obrácení byl obal měkký a opadával. Příště nechat paličky před obalením okapat.' }],
+  version: 2, updated: '2026-10-21', source: 'chat 12. 9. 2026',
+  history: [{ v: 2, date: '2026-10-21', text: 'Strouhanka a mouka nahrazeny bezlepkovými, přidáno okapání před obalením.' }]
+},
+{
+  id: 'burtgulas', title: 'Buřtguláš z dunajské a uherské', subtitle: 'Z trvanlivých klobás. Sůl až úplně na konci.',
+  category: 'Hlavní jídlo', time: 40, servings: 4, equipment: ['hrnec'], tags: ['hit', 'jedno-nadobi', 'dvakrat'],
+  kidsLiked: true,
+  photo: { src: WM('Gulasch.jpg'), page: WP('Gulasch.jpg') },
+  key: 'Klobásy vyškvař nasucho, vyndej a vrať je až na konci jen prohřát. Kdyby se vařily celou dobu, ztvrdnou a omáčka se přesolí.',
+  ingredients: [
+    { n: 'dunajská klobása', a: 200, u: 'g' },
+    { n: 'uherská klobása', a: 200, u: 'g' },
+    { n: 'cibule (asi 2 velké)', a: 300, u: 'g' },
+    { n: 'sádlo nebo olej (jen když je potřeba)', a: 1, u: 'tbsp' },
+    { n: 'stroužky česneku', a: 2, u: 'ks' },
+    { n: 'mletá sladká paprika', a: 1, u: 'tbsp' },
+    { n: 'bezlepková mouka nebo bramborový škrob', a: 1, u: 'tbsp' },
+    { n: 'rajčatový protlak', a: 1, u: 'tbsp' },
+    { n: 'voda nebo vývar (bezlepkový)', a: 600, u: 'ml' },
+    { n: 'plnotučná hořčice (bezlepková)', a: 1, u: 'tsp' },
+    { n: 'majoránka', a: 1, u: 'tsp' },
+    { n: 'mletý kmín', a: 0.5, u: 'tsp' },
+    { n: 'pepř, kapka octa, sůl', a: 0, u: 'podle chuti' }
+  ],
+  steps: [
+    { t: 'Krájení', d: 'Klobásy na tenká kolečka (3 mm), cibuli nadrobno, česnek utři.' },
+    { t: 'Vyškvařit klobásy', d: 'Do suchého hrnce kolečka klobás, na středním stupni nech pustit tuk. Vyndej děrovanou lžící.', s: 240, key: true },
+    { t: 'Cibule', d: 'Ve vypečeném tuku restuj cibuli dozlatova. Suché dno: lžíce sádla.', s: 360 },
+    { t: 'Paprika mimo plotnu', d: 'Stáhni z plotny, vsyp papriku, mouku a kmín, rychle promíchej.' },
+    { t: 'Zalít a povařit', d: 'Vrať na plotnu, vmíchej protlak, zalij vodou a mírně vař odkryté, až zhoustne.', s: 1080 },
+    { t: 'Vrátit klobásy', d: 'Vsyp kolečka zpět a jen prohřej.', s: 300 },
+    { t: 'Dochutit', d: 'Hořčice, majoránka, česnek, pepř, kapka octa. Teprve teď ochutnej a případně osol.' }
+  ],
+  tips: [
+    'Uherská je pálivější — mletou papriku jen sladkou.',
+    'Dětem naber dřív, než dochutíš pepřem a octem.',
+    '400 g klobás = 4 porce s chlebem, s přílohou i 5.',
+    'Třetí den s přidanými párky pořád hit.'
+  ],
+  notes: [{ who: 'Lukáš', date: '2026-09', text: 'Vydrželo na tři dny, třetí den s párky — dětem chutnalo.' }],
+  version: 2, updated: '2026-10-21', source: 'chat 8. 9. 2026',
+  history: [{ v: 2, date: '2026-10-21', text: 'Hladká mouka nahrazena bezlepkovou / škrobem.' }]
+},
+{
+  id: 'kure-na-paprice', title: 'Kuře na paprice v papiňáku', subtitle: 'Klasika hotová za necelou půlhodinu.',
+  category: 'Hlavní jídlo', time: 35, servings: 2, equipment: ['papinak'], tags: ['kure', 'papinak', 'rychle'],
+  photo: { src: WM('Chicken_Paprikas.jpg'), page: WP('Chicken_Paprikas.jpg') },
+  key: 'Papriku sypej do hrnce staženého z plotny a hned zalij. Spálená paprika je hořká a nejde zachránit.',
+  ingredients: [
+    { n: 'kuřecí stehna s kostí', a: 700, u: 'g' },
+    { n: 'velká cibule', a: 1, u: 'ks' },
+    { n: 'sádlo nebo olej', a: 2, u: 'tbsp' },
+    { n: 'mletá sladká paprika', a: 1.5, u: 'tbsp' },
+    { n: 'voda nebo vývar (bezlepkový)', a: 200, u: 'ml' },
+    { n: 'sůl', a: 1, u: 'tsp' },
+    { n: 'smetana ke šlehání 31 %', a: 250, u: 'ml' },
+    { n: 'bezlepková mouka nebo bramborový škrob', a: 2, u: 'tbsp' },
+    { n: 'citronová šťáva (volitelně)', a: 1, u: 'tsp' }
+  ],
+  steps: [
+    { t: 'Příprava', d: 'Stehna osuš a osol (sůl rozděl mezi maso a omáčku). Cibuli najemno.' },
+    { t: 'Opéct maso', d: 'V otevřeném papiňáku na sádle opeč stehna z obou stran dozlatova, vyndej.', s: 420 },
+    { t: 'Cibule', d: 'Ve výpeku smaž cibuli do sklovita až zlatova.', s: 360 },
+    { t: 'Paprika mimo plotnu', d: 'Hrnec ODSTAV z plotny, vsyp papriku, promíchej a hned zalij vodou. Vrať na plotnu.', key: true },
+    { t: 'Pod tlakem', d: 'Vrať stehna i se šťávou, zavři, natlakuj a od zasyčení vař na mírném stupni (vykostěná 8 min, prsa 5 min).', s: 720 },
+    { t: 'Odpustit tlak', d: 'Odstav a nech tlak klesnout (nebo po 5 min odpusť ventilem). Maso vyndej.', s: 300 },
+    { t: 'Zahustit', d: 'Ve smetaně rozšlehej mouku dohladka, vlij za stálého míchání a povař.', s: 240 },
+    { t: 'Dochutit', d: 'Dosol, případně citron. Vrať maso, prohřej.' }
+  ],
+  tips: [
+    'Po natlakování stáhni plotnu hned na ⅓ výkonu.',
+    'Příloha: rýže, bezlepkové těstoviny nebo bezlepkový knedlík.',
+    'Nádobí hned umyj, smetana s paprikou zaschne do krusty.'
+  ],
+  notes: [], version: 2, updated: '2026-10-21', source: 'chat 23. 8. 2026',
+  history: [{ v: 2, date: '2026-10-21', text: 'Mouka a knedlík upraveny na bezlepkové.' }]
+},
+{
+  id: 'kure-plech-brambory', title: 'Kuře na plechu s bramborami a paprikami', subtitle: 'Plech rozdělený na dětskou a dospěláckou půlku. Jen nakrájet a čekat.',
+  category: 'Hlavní jídlo', time: 80, servings: 4, equipment: ['trouba', 'plech'], tags: ['kure', 'trouba', 'jedno-nadobi'],
+  kidsLiked: true,
+  photo: { src: WM('Roasted_chicken_and_potatoes.JPG'), page: WP('Roasted_chicken_and_potatoes.JPG') },
+  key: 'Kuře polož nad kořeněnou půlku. Dětské brambory musí ležet mimo kapající šťávu — přesně to rozhodne, jestli jim budou chutnat.',
+  ingredients: [
+    { n: 'kuřecí čtvrtky nebo stehna', a: 4, u: 'ks' },
+    { n: 'brambory (typ B)', a: 1000, u: 'g' },
+    { n: 'paprika', a: 2, u: 'ks' },
+    { n: 'cibule', a: 1, u: 'ks' },
+    { n: 'olej', a: 4, u: 'tbsp' },
+    { n: 'máslo (na dětské brambory)', a: 20, u: 'g' },
+    { n: 'stroužky česneku', a: 3, u: 'ks' },
+    { n: 'mletá sladká paprika', a: 1, u: 'tsp' },
+    { n: 'sůl', a: 0, u: 'podle chuti' }
+  ],
+  steps: [
+    { t: 'Trouba', d: '200 °C (horkovzduch 180 °C), plech s pečicím papírem.', s: 600 },
+    { t: 'Brambory', d: 'Oloupej a nakrájej na stejné kusy cca 3 cm.' },
+    { t: 'Rozdělit plech', d: 'Brambory s olejem a solí jednovrstvě. Na jednu půlku paprika, česnek a cibule, druhá jen se solí.' },
+    { t: 'Kuře', d: 'Osol, kůží nahoru nad kořeněnou půlku.', key: true },
+    { t: 'První pečení', d: 'Doprostřed trouby, nic nemíchej.', s: 2100 },
+    { t: 'Papriky', d: 'Papriky na širší proužky kolem kuřete. Dětskou stranu opatrně promíchej.' },
+    { t: 'Dopéct', d: 'Až kůže zezlátne a šťáva u kosti je čirá.', s: 1500 },
+    { t: 'Odpočinek', d: 'Nech kuře stát, dětské brambory pokapej máslem.', s: 300 }
+  ],
+  tips: [
+    'Mletá paprika a bylinky jen na dospěláckou půlku.',
+    'Kůži osuš utěrkou, líp zezlátne.',
+    'Zbytky v troubě na 180 °C 12 minut, mikrovlnka udělá z brambor gumu.',
+    'Nevyjde to? Dětské brambory uvař zvlášť a jen na konci dej na plech.'
+  ],
+  notes: [{ who: 'Lukáš', date: '2026-08', text: 'Kuře dětem chutnalo, brambory byly moc kořeněné — proto dělený plech.' }],
+  version: 2, updated: '2026-10-21', source: 'chat 28. 8. 2026',
+  history: [{ v: 2, date: '2026-10-21', text: 'Opraveno přepočítávání množství (původní widget počítal suroviny pro 1 porci).' }]
+},
+{
+  id: 'smetanove-testoviny', title: 'Smetanové těstoviny s kuřetem', subtitle: 'Rychlá krémová klasika za 30 minut.',
+  category: 'Hlavní jídlo', time: 30, servings: 2, equipment: ['panev24', 'hrnec'], tags: ['kure', 'testoviny', 'rychle'],
+  photo: { src: WM('Pasta_with_a_Chicken_Lemon_Cream_Sauce_(764644143).jpg'), page: WP('Pasta_with_a_Chicken_Lemon_Cream_Sauce_(764644143).jpg') },
+  key: 'Kuře osmahni pořádně dozlatova a omáčku dělej ve stejné pánvi — připečené kousky dají chuť.',
+  ingredients: [
+    { n: 'bezlepkové těstoviny (penne, vřetena)', a: 200, u: 'g' },
+    { n: 'kuřecí prsa', a: 250, u: 'g' },
+    { n: 'smetana ke šlehání 31 %', a: 200, u: 'ml' },
+    { n: 'cibule', a: 1, u: 'ks' },
+    { n: 'stroužky česneku', a: 2, u: 'ks' },
+    { n: 'olej', a: 2, u: 'tbsp' },
+    { n: 'sůl', a: 1, u: 'tsp' },
+    { n: 'mletý pepř', a: 0.5, u: 'tsp' },
+    { n: 'parmezán nebo tvrdý sýr', a: 40, u: 'g' }
+  ],
+  steps: [
+    { t: 'Těstoviny', d: 'Vař v osolené vodě podle obalu. Odlož si trochu vody z vaření.', s: 600 },
+    { t: 'Krájení', d: 'Kuře na nudličky, cibuli nadrobno, česnek najemno.' },
+    { t: 'Kuře', d: 'Na oleji osmahni dozlatova, osol, opepři, vyndej.', s: 360, key: true },
+    { t: 'Cibule a česnek', d: 'Ve stejné pánvi cibuli doměkka, pak chvilku česnek.', s: 240 },
+    { t: 'Smetana', d: 'Vrať maso, přilij smetanu a nech probublat. Hustou uvolni vodou z těstovin.', s: 300 },
+    { t: 'Spojit', d: 'Vmíchej těstoviny a sýr, dochuť.' }
+  ],
+  tips: [
+    'Cibuli pro děti nastrouhej nebo vynech.',
+    'Hrášek nebo špenát na poslední minuty.',
+    'Bez smetany: mléko s lžící másla.'
+  ],
+  notes: [], version: 2, updated: '2026-10-21', source: 'chat 9. 8. 2026',
+  history: [{ v: 2, date: '2026-10-21', text: 'Těstoviny upřesněny na bezlepkové.' }]
+},
+{
+  id: 'paprikova-pomazanka', title: 'Papriková pomazánka', subtitle: 'Jemná, bez vaření, za 10 minut plus odležení.',
+  category: 'Svačina', time: 40, servings: 4, equipment: [], tags: ['rychle', 'svacina'],
+  photo: { src: WM('Pomaz%C3%A1nkov%C3%A9_m%C3%A1slo_587.JPG'), page: WP('Pomaz%C3%A1nkov%C3%A9_m%C3%A1slo_587.JPG') },
+  key: 'Papriku nakrájej na drobné kostičky a osuš na papírové utěrce. Jinak pomazánka pustí vodu.',
+  ingredients: [
+    { n: 'pomazánkové máslo', a: 250, u: 'g' },
+    { n: 'červená paprika (cca 150 g)', a: 1, u: 'ks' },
+    { n: 'malá cibule (u dětí vynech)', a: 0.5, u: 'ks' },
+    { n: 'mletá sladká paprika', a: 1, u: 'tsp' },
+    { n: 'zakysaná smetana', a: 1, u: 'tbsp' },
+    { n: 'sůl', a: 0.5, u: 'tsp' },
+    { n: 'mletý pepř', a: 0, u: 'špetka' },
+    { n: 'nasekaná pažitka (nepovinné)', a: 1, u: 'tbsp' }
+  ],
+  steps: [
+    { t: 'Paprika', d: 'Na kostičky 2–3 mm a osuš na papírové utěrce.', key: true },
+    { t: 'Cibule', d: 'Najemno, přelij v cedníku horkou vodou a nech okapat.' },
+    { t: 'Mletá paprika', d: 'Rozmíchej se zakysanou smetanou dohladka.' },
+    { t: 'Základ', d: 'Pomazánkové máslo rozmíchej vidličkou, vmíchej paprikovou smetanu.' },
+    { t: 'Zbytek', d: 'Přidej papriku, cibuli, sůl, pepř a pažitku, ochutnej.' },
+    { t: 'Odležet', d: 'Do lednice.', s: 1800 }
+  ],
+  tips: [
+    'Večer předem je druhý den ještě lepší, vydrží 2–3 dny.',
+    'Pustí vodu? Slij a promíchej.',
+    'Lučina nebo žervé místo pomazánkového másla = hustší.',
+    'Na bezlepkový chléb nebo rýžové chlebíčky.'
+  ],
+  notes: [], version: 1, updated: '2026-09-06', source: 'chat 6. 9. 2026', history: []
+},
+{
+  id: 'pho-bo', title: 'Rychlé pho bo', subtitle: 'Na kupovaném vývaru za 50 minut, z toho 35 se jen louhuje.',
+  category: 'Polévka', time: 50, servings: 4, equipment: ['hrnec', 'panev24'], tags: ['polevka', 'experiment'],
+  photo: { src: WM('Ph%E1%BB%9F_b%C3%B2_(39425047901).jpg'), page: WP('Ph%E1%BB%9F_b%C3%B2_(39425047901).jpg') },
+  key: 'Cibuli a zázvor opal na suché pánvi opravdu dočerna. To je rozdíl mezi pho a kořeněným bujónem.',
+  ingredients: [
+    { n: 'hovězí vývar (krabicový, bezlepkový)', a: 2000, u: 'ml' },
+    { n: 'velká cibule (neloupaná)', a: 1, u: 'ks' },
+    { n: 'zázvor', a: 60, u: 'g' },
+    { n: 'badyán (hvězdičky)', a: 3, u: 'ks' },
+    { n: 'skořice (tyčinka)', a: 1, u: 'ks' },
+    { n: 'hřebíček', a: 3, u: 'ks' },
+    { n: 'rybí omáčka (zkontroluj lepek)', a: 2, u: 'tbsp' },
+    { n: 'cukr', a: 1, u: 'tsp' },
+    { n: 'hovězí roštěná nebo zadní', a: 400, u: 'g' },
+    { n: 'široké rýžové nudle', a: 250, u: 'g' },
+    { n: 'jarní cibulka', a: 3, u: 'ks' },
+    { n: 'koriandr', a: 1, u: 'hrst' },
+    { n: 'limetka', a: 1, u: 'ks' }
+  ],
+  steps: [
+    { t: 'Opálit', d: 'Cibuli přepul, zázvor podélně, řezem dolů na suchou rozpálenou pánev dočerna. Poslední 2 minuty přihoď koření.', s: 480, key: true },
+    { t: 'Louhovat', d: 'Vývar k varu, vhoď vše z pánve a nech táhnout pod pokličkou na mírném stupni.', s: 2100 },
+    { t: 'Maso', d: 'Maso do mrazáku, pak nakrájej co nejtenčí plátky přes vlákno.', s: 1200 },
+    { t: 'Nudle', d: 'Uvař podle obalu, sceď a propláchni studenou vodou.', s: 300 },
+    { t: 'Dochutit', d: 'Vývar přeceď, vmíchej rybí omáčku a cukr. Má být výraznější, nudle to ztlumí.', s: 180 },
+    { t: 'Servírovat', d: 'Nudle, syrové plátky masa a zalij vroucím vývarem. Navrch cibulka, koriandr, limetka.' }
+  ],
+  tips: [
+    'Dětská verze: vývar, nudle, maso, nic navrch.',
+    'Vývar zdvojnásob — druhý den za 15 minut.',
+    'Pánev po opalování jen vytři utěrkou.'
+  ],
+  notes: [], version: 1, updated: '2026-09-13', source: 'chat 13. 9. 2026', history: []
+},
+{
+  id: 'cervene-kari', title: 'Červené kari s kuřetem a cuketou', subtitle: 'Krémové, z červené kari pasty, za 25 minut.',
+  category: 'Hlavní jídlo', time: 25, servings: 2, equipment: ['wok', 'ryzovar'], tags: ['kure', 'ryze', 'rychle'],
+  photo: { src: WM('Red_thai_curry.jpg'), page: WP('Red_thai_curry.jpg') },
+  key: 'Kari pastu nech minutu rozvonět na oleji, než přidáš maso. Tady vzniká chuť.',
+  ingredients: [
+    { n: 'kuřecí prsa', a: 400, u: 'g' },
+    { n: 'cuketa', a: 1, u: 'ks' },
+    { n: 'kokosové mléko', a: 400, u: 'ml' },
+    { n: 'červená kari pasta (podle pálivosti)', a: 2, u: 'tbsp' },
+    { n: 'cibule', a: 1, u: 'ks' },
+    { n: 'stroužky česneku', a: 2, u: 'ks' },
+    { n: 'olej', a: 1, u: 'tbsp' },
+    { n: 'bezlepková sójovka (tamari)', a: 1, u: 'tbsp' },
+    { n: 'sůl', a: 0.5, u: 'tsp' }
+  ],
+  steps: [
+    { t: 'Základ', d: 'Na oleji orestuj cibuli a česnek do sklovita.', s: 180 },
+    { t: 'Kari pasta', d: 'Přidej pastu a minutu restuj, až zavoní.', s: 60, key: true },
+    { t: 'Kuře', d: 'Přidej kuře a restuj, až zvenku zbělá.', s: 240 },
+    { t: 'Kokos', d: 'Vlij kokosové mléko a sójovku, přiveď k mírnému varu.', s: 120 },
+    { t: 'Cuketa', d: 'Přidej cuketu, osol a probublávej, až změkne.', s: 540 }
+  ],
+  tips: [
+    'Pasty dej nejdřív 1 tbsp, některé jsou dost pálivé. Pro děti spíš žluté kari.',
+    'Na závěr pár kapek limetky nebo citronu.',
+    'Hutné? Zřeď vodou nebo vývarem.'
+  ],
+  notes: [], version: 2, updated: '2026-10-21', source: 'chat 6. 8. 2026',
+  history: [{ v: 2, date: '2026-10-21', text: 'Sójovka upřesněna na bezlepkovou.' }]
+},
+{
+  id: 'hovezi-na-cibuli', title: 'Restované hovězí na cibuli a česneku', subtitle: 'Jednoduché slané hovězí s rýží, bez cukru. Na dvě večeře.',
+  category: 'Hlavní jídlo', time: 30, servings: 4, equipment: ['wok', 'ryzovar'], tags: ['rychle', 'ryze', 'dvakrat'],
+  photo: { src: WM('Mongolian_Beef_with_rice_and_noodles.jpg'), page: WP('Mongolian_Beef_with_rice_and_noodles.jpg') },
+  key: 'Maso opékej po dávkách na maximálním stupni jen 1–2 minuty. Přeplněná pánev ho dusí a ztvrdne.',
+  ingredients: [
+    { n: 'hovězí (květová špička / nízký roštěnec), tenké plátky přes vlákno', a: 700, u: 'g' },
+    { n: 'velká cibule', a: 1, u: 'ks' },
+    { n: 'stroužky česneku', a: 3, u: 'ks' },
+    { n: 'bezlepková sójovka', a: 4, u: 'tbsp' },
+    { n: 'bramborový škrob (na obalení)', a: 1, u: 'tbsp' },
+    { n: 'olej', a: 2, u: 'tbsp' },
+    { n: 'máslo', a: 1, u: 'tbsp' },
+    { n: 'mletý pepř', a: 0.5, u: 'tsp' },
+    { n: 'voda', a: 60, u: 'ml' },
+    { n: 'rýže', a: 300, u: 'g' }
+  ],
+  steps: [
+    { t: 'Rýže', d: 'Pusť rýži v rýžovaru.', s: 720 },
+    { t: 'Maso', d: 'Osuš a lehce obal ve škrobu. Nesol.' },
+    { t: 'Opéct', d: 'Olej na maximum, maso po dávkách do zhnědnutí, vyndej.', s: 120, key: true },
+    { t: 'Cibule', d: 'Ve stejném woku cibuli do sklovita, pak půl minuty česnek.', s: 180 },
+    { t: 'Dokončit', d: 'Vrať maso, sójovka a voda, minutu prohřej. Pepř a nakonec máslo.', s: 60 }
+  ],
+  tips: [
+    'Sójovka je slaná — sol až nakonec.',
+    'Na druhou večeři maso zvlášť od rýže, ohřát na pánvi s kapkou vody.'
+  ],
+  notes: [], version: 2, updated: '2026-10-21', source: 'chat 10. 8. 2026',
+  history: [{ v: 2, date: '2026-10-21', text: 'Mouka nahrazena škrobem, sójovka bezlepková.' }]
+},
+{
+  id: 'ryzove-nudle-syr', title: 'Rýžové nudle se sýrovou omáčkou', subtitle: 'Z taveného sýra a eidamu za pár minut. Pro Aničku.',
+  category: 'Hlavní jídlo', time: 15, servings: 2, equipment: ['panev24'], tags: ['rychle', 'testoviny', 'jedno-nadobi'],
+  photo: { src: WM('Cavatelli_in_cheese_sauce.jpg'), page: WP('Cavatelli_in_cheese_sauce.jpg') },
+  key: 'Tavený sýr rozpouštěj pomalu na nízkém stupni. Když je moc horko, sráží se a odděluje se tuk.',
+  ingredients: [
+    { n: 'rýžové nudle', a: 160, u: 'g' },
+    { n: 'tavený sýr (Smetanito)', a: 100, u: 'g' },
+    { n: 'eidam nebo gouda, nastrouhaný', a: 50, u: 'g' },
+    { n: 'mléko (nebo voda z nudlí)', a: 100, u: 'ml' },
+    { n: 'Rama nebo máslo', a: 1, u: 'tbsp' },
+    { n: 'sůl', a: 0.25, u: 'tsp' },
+    { n: 'mletý pepř (pro Aničku vynech)', a: 0.25, u: 'tsp' },
+    { n: 'žloutek (volitelně)', a: 1, u: 'ks' }
+  ],
+  steps: [
+    { t: 'Nudle', d: 'Spař nebo krátce povař podle sáčku, odlož trochu vody.', s: 300 },
+    { t: 'Základ', d: 'Rozpusť Ramu, přilij mléko a prohřej (nevař).', s: 60 },
+    { t: 'Sýry', d: 'Vmíchej tavený sýr dohladka, pak eidam.', s: 120, key: true },
+    { t: 'Dochutit', d: 'Osol, opepři, hustou rozvolni vodou z nudlí.' },
+    { t: 'Spojit', d: 'Vmíchej nudle. Volitelně mimo plotnu žloutek.' }
+  ],
+  tips: [
+    'Bez žloutku je to jistota, že se nic nesrazí.',
+    'Šunka na kostičky = víc bílkovin.',
+    'Část taveného sýra jde nahradit Lučinou.'
+  ],
+  notes: [], version: 1, updated: '2026-08-09', source: 'chat 9. 8. 2026', history: []
+},
+{
+  id: 'miso-ramen', title: 'Krémový miso ramen s kuřetem', subtitle: 'Kuřecí vývar s misem a sójovým mlékem, opečená stehna a vejce.',
+  category: 'Polévka', time: 45, servings: 4, equipment: ['hrnec'], tags: ['polevka', 'kure', 'experiment'],
+  photo: { src: WM('Miso_Ramen.JPG'), page: WP('Miso_Ramen.JPG') },
+  key: 'Po přidání misa a mléka už vývar nesmí vařit. Mléko by se srazilo a miso ztratí chuť.',
+  ingredients: [
+    { n: 'kuřecí stehna bez kosti', a: 600, u: 'g' },
+    { n: 'granulovaný česnek', a: 1, u: 'tsp' },
+    { n: 'černý pepř', a: 0.5, u: 'tsp' },
+    { n: 'sladká paprika', a: 0.5, u: 'tsp' },
+    { n: 'bezlepková sójovka (marináda)', a: 1, u: 'tbsp' },
+    { n: 'olej', a: 1, u: 'tbsp' },
+    { n: 'šalotky (nebo 1 malá cibule)', a: 2, u: 'ks' },
+    { n: 'jarní cibulky', a: 4, u: 'ks' },
+    { n: 'nastrouhaný zázvor', a: 1, u: 'tbsp' },
+    { n: 'stroužky česneku', a: 3, u: 'ks' },
+    { n: 'kuřecí vývar (bezlepkový)', a: 1200, u: 'ml' },
+    { n: 'světlá miso pasta (bez ječmene)', a: 3, u: 'tbsp' },
+    { n: 'bezlepková sójovka (vývar)', a: 1, u: 'tbsp' },
+    { n: 'neslazené sójové mléko', a: 400, u: 'ml' },
+    { n: 'bezlepkové nudle (rýžové)', a: 400, u: 'g' },
+    { n: 'vejce', a: 4, u: 'ks' },
+    { n: 'sójové klíčky (nepovinné)', a: 150, u: 'g' },
+    { n: 'chilli olej (jen dospělí)', a: 1, u: 'tsp' }
+  ],
+  steps: [
+    { t: 'Marináda', d: 'Kuře obal v koření a sójovce. Nakrájej šalotku, cibulku, česnek, nastrouhej zázvor.', s: 600 },
+    { t: 'Vejce', d: 'Do vroucí vody, pak do studené. Vodu nech na nudle.', s: 390 },
+    { t: 'Kuře', d: 'V druhém hrnci opékej stehna, v polovině otoč. Nech odpočinout.', s: 600 },
+    { t: 'Základ vývaru', d: 'Ve stejném hrnci osmahni šalotku, bílé části cibulky, zázvor a česnek.', s: 180 },
+    { t: 'Vývar', d: 'Zalij vývarem, seškrábni dno a nech probublávat.', s: 600 },
+    { t: 'Nudle', d: 'Uvař ve vodě po vejcích, sceď.', s: 240 },
+    { t: 'Miso a mléko', d: 'Stupeň na minimum. Miso rozmíchej v naběračce vývaru, vlij zpět se sójovkou a mlékem. Jen prohřej.', s: 180, key: true },
+    { t: 'Servírovat', d: 'Nudle, vývar, nakrájené kuře, půlky vajec, klíčky, zelená cibulka. Dospělým chilli olej.' }
+  ],
+  tips: [
+    'Miso kontroluj na složení — některé obsahují ječmen (lepek).',
+    'Vývar skladuj zvlášť od nudlí.',
+    'Vajíčka přes noc ve směsi sójovky a vody 1:1 = hnědá jako v ramen baru.'
+  ],
+  notes: [], version: 2, updated: '2026-10-21', source: 'chat 17. 9. 2026',
+  history: [{ v: 2, date: '2026-10-21', text: 'Sójovka, nudle a miso upřesněny na bezlepkové.' }]
+},
+{
+  id: 'kure-mrkev-kase', title: 'Kuře s mrkví a bramborovou kaší', subtitle: 'Šetrné jídlo v jednom hrnci, bez másla a mléka.',
+  category: 'Hlavní jídlo', time: 35, servings: 2, equipment: ['hrnec'], tags: ['kure', 'jedno-nadobi', 'setrne'],
+  photo: { src: WM('Grilled_chicken_with_mashed_potato_and_spinach.jpg'), page: WP('Grilled_chicken_with_mashed_potato_and_spinach.jpg') },
+  key: 'Kaši řeď vodou z vaření, ne mlékem ani máslem.',
+  ingredients: [
+    { n: 'kuřecí prsa', a: 250, u: 'g' },
+    { n: 'brambory (typ B)', a: 500, u: 'g' },
+    { n: 'mrkev (asi 2 ks)', a: 200, u: 'g' },
+    { n: 'sůl', a: 0.5, u: 'tsp' },
+    { n: 'voda', a: 1000, u: 'ml' }
+  ],
+  steps: [
+    { t: 'Příprava', d: 'Brambory a mrkev na kousky velikosti ořechu, kuře na kostky 2 cm.' },
+    { t: 'Zelenina', d: 'Do studené osolené vody, přiveď k varu a vař mírně pod pokličkou.', s: 300 },
+    { t: 'Kuře', d: 'Přidej do stejného hrnce a vař, až jsou brambory měkké a kuře propečené.', s: 900 },
+    { t: 'Kaše', d: 'Kuře vylov, odlij hrnek vody, zbytek slij. Rozmačkej a řeď vodou z vaření.', key: true },
+    { t: 'Podávání', d: 'Kaše, navrch kuře, zakápnout vodou z vaření.' }
+  ],
+  tips: [
+    'Bez bujónu — bývá ostrý a často s lepkem.',
+    'Když je žaludek v pořádku, přidej máslo a koření.',
+    'Ohřev s lžící vody na mírném stupni.'
+  ],
+  notes: [], version: 1, updated: '2026-09-21', source: 'chat 21. 9. 2026', history: []
 }
 ];
