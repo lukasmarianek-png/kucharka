@@ -301,6 +301,18 @@ function timerBtn(r, i, cls = 'tbtn') {
   const s = r.steps[i]; if (!s.s) return '';
   return `<button class="${cls}" data-tkey="${tKey(r.id, i)}" data-dur="${s.s}" data-state="idle">${ico('play')}<span class="tl">${mmss(s.s)}</span></button>`;
 }
+/* suroviny použité v kroku, přepočtené na zvolené porce */
+function stepIngs(r, s, ratio) {
+  return (s.i || []).map(e => {
+    const [k, part] = Array.isArray(e) ? e : [e, 1];
+    const g = r.ingredients[k]; if (!g) return null;
+    return { q: fmtQty(g, ratio * part), n: g.n, part: part < 1 };
+  }).filter(Boolean);
+}
+function stepIngsHTML(r, s, ratio, cls) {
+  const list = stepIngs(r, s, ratio); if (!list.length) return '';
+  return `<ul class="${cls}">${list.map(x => `<li><b>${esc(x.q)}</b> ${esc(x.n)}${x.part ? ' <em>(část)</em>' : ''}</li>`).join('')}</ul>`;
+}
 
 function viewRecipe(id) {
   const r = byId(id); if (!r) return go('#/');
@@ -339,7 +351,7 @@ function viewRecipe(id) {
 
     <section class="panel"><div class="panel-h"><h2>Postup</h2>${Object.keys(done).length ? '<button class="small" id="dreset" style="color:var(--accent);font-weight:700">Začít znovu</button>' : ''}</div>
       <ol class="steps">${r.steps.map((s, i) => `<li class="step ${done[i] ? 'done' : ''}" data-i="${i}"><span class="num">${i + 1}</span><div class="tx">
-        <div class="tt">${esc(s.t)}${s.key ? '<span class="k">klíčové</span>' : ''}${s.tag ? `<span class="tg">${esc(s.tag)}</span>` : ''}</div><p>${esc(s.d)}</p>${timerBtn(r, i)}</div></li>`).join('')}</ol>
+        <div class="tt">${esc(s.t)}${s.key ? '<span class="k">klíčové</span>' : ''}${s.tag ? `<span class="tg">${esc(s.tag)}</span>` : ''}</div><p>${esc(s.d)}</p>${stepIngsHTML(r, s, ratio, 'sing')}${timerBtn(r, i)}</div></li>`).join('')}</ol>
     </section>
 
     ${r.tips && r.tips.length ? `<section class="panel"><div class="panel-h"><h2>Tipy</h2></div><ul class="tips">${r.tips.map(t => `<li>${esc(t)}</li>`).join('')}</ul></section>` : ''}
@@ -443,6 +455,7 @@ function viewCook(id) {
     <div class="cook-body" id="cb">
       <div class="no">Krok ${cookIdx + 1} z ${r.steps.length}</div>
       <h2>${esc(s.t)}${s.tag ? ` <span class="tg" style="font-family:var(--sans);font-size:14px;vertical-align:6px;background:var(--olive-soft);color:var(--olive);padding:3px 9px;border-radius:7px">${esc(s.tag)}</span>` : ''}</h2>
+      ${stepIngs(r, s, ratio).length ? `<div class="cook-step-ings"><div class="lbl">V tomhle kroku · ${n} ${servLabel(r, n)}</div>${stepIngsHTML(r, s, ratio, 'csi')}</div>` : ''}
       <div class="txt">${esc(s.d)}</div>
       ${s.key && r.key ? `<div class="keybox k">${ico('spark')}<div><b>Pozor</b><p>${esc(r.key)}</p></div></div>` : ''}
       ${s.s ? timerBtn(r, cookIdx, 'big-timer') : ''}
@@ -557,6 +570,15 @@ function render(keepScroll) {
   updateShopBadge(); tick(true); syncWake();
 }
 addEventListener('hashchange', () => render());
+
+/* ---------- schovat prvky, které do stránky vkládá Netlify (lišta / logo) ---------- */
+function stripNetlify(root) {
+  (root.querySelectorAll ? root.querySelectorAll('body > *:not(#app):not(nav):not(button):not(.toast):not(.sheet):not(.sheet-backdrop):not(form):not(svg):not(script)') : []).forEach(el => {
+    const sig = (el.tagName + ' ' + (el.id || '') + ' ' + (typeof el.className === 'string' ? el.className : '') + ' ' + (el.getAttribute('src') || '')).toLowerCase();
+    if (sig.includes('netlify')) el.remove();
+  });
+}
+try { stripNetlify(document); new MutationObserver(() => stripNetlify(document)).observe(document.body, { childList: true }); } catch {}
 
 /* ---------- boot ---------- */
 applyTheme();
